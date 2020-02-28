@@ -1,18 +1,45 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <base-appbar></base-appbar>
+    <v-content>
+      <Hero />
+      <About />
+      <Members />
+      <Data />
+      <Actions />
+      <Products />
+      <Video />
+      <Testimonies />
+    </v-content>
+    <!-- <base-footer></base-footer> -->
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import BaseAppbar from '@/components/BaseComponents/BaseAppbar.vue';
+// import BaseFooter from '@/components/BaseComponents/BaseFooter.vue';
+import Hero from '@/components/HeroComponent.vue';
+import About from '@/components/AboutComponent.vue';
+import Members from '@/components/MembersComponent.vue';
+import Data from '@/components/DataComponent.vue';
+import Actions from '@/components/ActionsComponent.vue';
+import Products from '@/components/ProductsComponent.vue';
+import Video from '@/components/VideoComponent.vue';
+import Testimonies from '@/components/TestimoniesComponent.vue';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    BaseAppbar,
+    // BaseFooter,
+    Hero,
+    About,
+    Members,
+    Data,
+    Actions,
+    Products,
+    Video,
+    Testimonies,
   },
 };
 </script>
