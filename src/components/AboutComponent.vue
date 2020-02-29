@@ -1,8 +1,8 @@
 <template>
   <v-container class="fi-about">
     <v-row>
-      <v-col cols="6">
-        <h1 class="fi-title accent--text">What is Fitin?</h1>
+      <v-col cols="6" class="fi-desc">
+        <h1 class="fi-title text-uppercase accent--text">What is Fitin?</h1>
         <p class="fi-text">
           is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -16,7 +16,7 @@
         </p>
       </v-col>
       <v-col cols="6">
-        <h1>Ada gambar disini</h1>
+        <img class="fi-img" src="../assets/about.jpg" alt="">
       </v-col>
     </v-row>
   </v-container>
@@ -30,6 +30,10 @@ export default {
 
 <style lang="scss" scoped>
 .fi-about {
+  padding: 5% 0;
+  .fi-desc{
+    padding-right: 5%;
+  }
   .fi-title {
     font-family: 'Rubik';
     font-style: normal;
@@ -37,11 +41,15 @@ export default {
     font-size: 3em;
   }
   .fi-text {
-    font-family: 'Roboto';
+    margin-top: 15px;
     font-style: normal;
     font-weight: normal;
-    font-size: 2em;
+    font-size: 24px;
     text-align: justify;
+  }
+  .fi-img{
+    padding-top: 10%;
+    width: 100%;
   }
 }
 </style>
