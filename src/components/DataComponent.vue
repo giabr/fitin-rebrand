@@ -63,7 +63,7 @@ export default {
     font-family: Rubik;
     font-style: normal;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 4em;
   }
   .fi-text{
     padding-bottom: 40px;

@@ -16,15 +16,26 @@
         </p>
       </v-col>
       <v-col cols="6">
-        <img class="fi-img" src="../assets/about.jpg" alt="">
+        <div class="fi-ig">
+        <instagram-embed
+          :url="'https://www.instagram.com/p/B9EeF6KFgHc/'"
+          :max-width=450
+          :hide-caption=true
+        />
+        </div>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
+import InstagramEmbed from 'vue-instagram-embed';
+
 export default {
   name: 'AboutComponent',
+  components: {
+    InstagramEmbed,
+  },
 };
 </script>
 
@@ -33,6 +44,9 @@ export default {
   padding: 5% 0;
   .fi-desc{
     padding-right: 5%;
+  }
+  .fi-ig{
+    padding-left: 15%;
   }
   .fi-title {
     font-family: 'Rubik';
