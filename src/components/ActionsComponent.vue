@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import StepComponent from './ActionComponent/StepComponent.vue';
+import StepComponent from './ActionComponents/StepComponent.vue';
 
 export default {
   name: 'ActionsComponent',

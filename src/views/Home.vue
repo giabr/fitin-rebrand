@@ -9,7 +9,7 @@
       <Actions />
       <Banner />
       <Products />
-      <Video />
+      <Impact />
       <Testimonies />
     </v-content>
     <!-- <base-footer></base-footer> -->
@@ -26,7 +26,7 @@ import Data from '@/components/DataComponent.vue';
 import Banner from '@/components/BannerComponent.vue';
 import Actions from '@/components/ActionsComponent.vue';
 import Products from '@/components/ProductsComponent.vue';
-import Video from '@/components/VideoComponent.vue';
+import Impact from '@/components/ImpactComponent.vue';
 import Testimonies from '@/components/TestimoniesComponent.vue';
 
 export default {
@@ -41,7 +41,7 @@ export default {
     Actions,
     Banner,
     Products,
-    Video,
+    Impact,
     Testimonies,
   },
 };
