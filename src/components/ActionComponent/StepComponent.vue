@@ -3,6 +3,7 @@
     <div class="fi-circle">
         <h1 class="fi-title white--text">{{content.num}}</h1>
     </div>
+        <h1 class="text-uppercase fi-sub-title white--text">{{content.title}}</h1>
         <p class="fi-text white--text">{{content.content}}</p>
   </v-col>
 </template>
@@ -23,6 +24,7 @@ export default {
     width: 180px;
     height: 180px;
     background: #5AC8D8;
+    opacity: 0.7;
     -moz-border-radius: 90px;
     -webkit-border-radius: 90px;
     border-radius: 90px;
@@ -38,11 +40,20 @@ export default {
     vertical-align: middle;
     line-height: 150px;
   }
+  .fi-sub-title {
+    margin-top: 15%;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
   .fi-text {
     margin-top: 15%;
+    font-family: 'Rubik';
     font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 28px;
     text-align: center;
     padding: 0 5%;

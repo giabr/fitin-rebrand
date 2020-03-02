@@ -7,6 +7,7 @@
       <Members />
       <Data />
       <Actions />
+      <Banner />
       <Products />
       <Video />
       <Testimonies />
@@ -22,6 +23,7 @@ import Hero from '@/components/HeroComponent.vue';
 import About from '@/components/AboutComponent.vue';
 import Members from '@/components/MembersComponent.vue';
 import Data from '@/components/DataComponent.vue';
+import Banner from '@/components/BannerComponent.vue';
 import Actions from '@/components/ActionsComponent.vue';
 import Products from '@/components/ProductsComponent.vue';
 import Video from '@/components/VideoComponent.vue';
@@ -37,6 +39,7 @@ export default {
     Members,
     Data,
     Actions,
+    Banner,
     Products,
     Video,
     Testimonies,

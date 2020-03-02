@@ -8,13 +8,6 @@
         </v-row>
       </v-container>
     </div>
-    <div class="fi-banner">
-      <h1
-        class="text-uppercase accent--text"
-      >
-        Let's <span class="primary--text">Change</span> Together
-      </h1>
-    </div>
   </v-container>
 </template>
 
@@ -29,10 +22,10 @@ export default {
   data() {
     return {
       steps: [
-        { num: 1, content: 'It is a long established fact that a reader will be distracted by the readable content' },
-        { num: 2, content: 'It is a long established fact that a reader will be distracted by the readable content' },
-        { num: 3, content: 'It is a long established fact that a reader will be distracted by the readable content' },
-        { num: 4, content: 'It is a long established fact that a reader will be distracted by the readable content' },
+        { num: 1, title: 'save space', content: 'after processing' },
+        { num: 2, title: 'make money', content: 'every transaction' },
+        { num: 3, title: 'share story', content: 'journey of life' },
+        { num: 4, title: 'save environment', content: 'handmade product' },
       ],
     };
   },
@@ -43,10 +36,10 @@ export default {
 .fi-actions {
   background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url('../assets/step.jpg');
   background-size: 100% auto;
-  background-position: center top;
+  background-position: center;
+  padding: 5% 0;
   .fi-how{
-    padding: 5% 0;
-    height: 700px;
+    height: 500px;
   }
   .fi-title {
     font-family: Rubik;

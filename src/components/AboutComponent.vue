@@ -4,21 +4,21 @@
       <v-col cols="6" class="fi-desc">
         <h1 class="fi-title text-uppercase accent--text">What is Fitin?</h1>
         <p class="fi-text">
-          is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book.
-          It has survived not only five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged.
-          It was popularised in the 1960s with the release of
-          Letraset sheets containing Lorem Ipsum passages,
-          and more recently with desktop publishing software like Aldus
+          Fitin is a startup engaged in developing products and services to process textile/garment
+          waste into high-value products such as home/office equipment made of
+          fabric, helping to empower friends with disabilities in increasing their creativity and
+          innovation to be able to foster market and environmental competitiveness healthy products,
+          and reduce the consumption of plastic products and the
+          resulting waste. Fitin has a role in educating the public about sensitivity to
+          environmental impacts caused by textile waste, providing training and improving skills
+          to process it, and actively participating in ECO-friendly communities to campaign for
+          the use and use of fabrics.
         </p>
       </v-col>
       <v-col cols="6">
         <div class="fi-ig">
         <instagram-embed
-          :url="'https://www.instagram.com/p/B9EeF6KFgHc/'"
+          :url="'https://www.instagram.com/p/B9HHfEvF4gG/'"
           :max-width=450
           :hide-caption=true
         />

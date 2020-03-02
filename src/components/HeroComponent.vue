@@ -7,7 +7,7 @@
       <v-col cols="6">
         <div class="text-uppercase white--text intro-title">
           <h1 class="fi-title-small">little <span class="primary--text">act</span></h1>
-          <h2 class="fi-title-big"><span class="primary--text">big</span>impact</h2>
+          <h2 class="fi-title-big"><span class="primary--text">big </span>impact</h2>
         </div>
       </v-col>
     </v-row>
