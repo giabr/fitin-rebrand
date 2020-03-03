@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="fi-card">
         <instagram-embed
           :url="product.url"
           :max-width=300
@@ -20,7 +20,3 @@ export default {
   },
 };
 </script>
-
-<style>
-
-</style>

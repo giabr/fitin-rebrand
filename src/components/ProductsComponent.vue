@@ -1,5 +1,5 @@
 <template>
-  <v-container class="fi-products">
+  <v-container fluid class="fi-products">
   <v-sheet
     class="mx-auto"
     max-width="1200"
@@ -15,7 +15,7 @@
         v-slot:default="{ active, toggle }"
       >
         <v-card
-          :color="active ? 'primary' : 'white lighten-1'"
+          :color="active ? 'primary' : 'background lighten-1'"
           class="ma-4"
           height="570"
           width="350"
@@ -63,6 +63,7 @@ export default {
 
 <style lang="scss" scoped>
   .fi-products{
-   padding-bottom: 5%;
+   background: #EDEEF0;
+   padding: 5% 0;
   }
 </style>
