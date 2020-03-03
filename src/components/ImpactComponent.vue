@@ -1,6 +1,6 @@
 <template>
   <v-container class="fi-impact">
-    <iframe class="fi-video" src="https://www.youtube.com/embed/YOA0D0i5-fA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="fi-video" src="https://www.youtube.com/embed/S2SMvfGe72U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="fi-title text-uppercase">
       <h1 class="fi-title-small primary--text">Your Little <span class="accent--text">Act</span>
       </h1>
@@ -24,8 +24,8 @@ export default {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 45%;
-    height: 70%;
+    width: 70%;
+    height: 80%;
     }
     .fi-title {
      font-family: Rubik;
