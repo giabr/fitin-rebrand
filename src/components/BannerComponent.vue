@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 .fi-banner {
-  padding: 10% 0;
+  padding-top: 10%;
   text-align: center;
   font-family: Rubik;
   font-style: normal;

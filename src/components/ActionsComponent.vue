@@ -35,7 +35,7 @@ export default {
 <style lang="scss" scoped>
 .fi-actions {
   background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url('../assets/step.jpg');
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
   padding: 5% 0;
   .fi-how{

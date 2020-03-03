@@ -63,7 +63,6 @@ export default {
 
 <style lang="scss" scoped>
   .fi-products{
-   background: #EDEEF0;
    padding: 5% 0;
   }
 </style>
