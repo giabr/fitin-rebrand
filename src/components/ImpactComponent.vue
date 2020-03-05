@@ -1,8 +1,11 @@
 <template>
   <div class="fi-impact">
-  <v-container>
+  <v-container class="fi-title">
+    <h1 class="text-uppercase fi-main white--text">our mission</h1>
+    <br>
     <iframe class="fi-video" src="https://www.youtube.com/embed/B-nEYsyRlYo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="fi-title text-uppercase">
+    <br>
+    <div class="text-uppercase">
       <h1 class="fi-title-small white--text">Your Little <span class="primary--text">Act</span>
       </h1>
       <h1 class="fi-title-big white--text">Make a <span class="primary--text">Big</span> Impact
@@ -43,6 +46,9 @@ export default {
      .fi-title-big {
       font-size: 6em;
       }
+     .fi-main {
+       font-size: 3em;
+     }
    }
   }
 </style>
