@@ -2,7 +2,7 @@
   <v-container fluid class="fi-hero black">
     <v-row>
       <v-col cols="6">
-        <iframe class="intro-video" src="https://www.youtube.com/embed/YOA0D0i5-fA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="intro-video" src="https://www.youtube.com/embed/a6m9c_84C0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </v-col>
       <v-col cols="6">
         <div class="text-uppercase white--text intro-title">

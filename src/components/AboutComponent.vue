@@ -17,11 +17,7 @@
       </v-col>
       <v-col cols="6">
         <div class="fi-ig">
-        <instagram-embed
-          :url="'https://www.instagram.com/p/B9HHfEvF4gG/'"
-          :max-width=450
-          :hide-caption=true
-        />
+        <iframe class="fi-ig" src="https://www.instagram.com/fashion.fitin/embed"></iframe>
         </div>
       </v-col>
     </v-row>
@@ -29,13 +25,9 @@
 </template>
 
 <script>
-import InstagramEmbed from 'vue-instagram-embed';
 
 export default {
   name: 'AboutComponent',
-  components: {
-    InstagramEmbed,
-  },
 };
 </script>
 

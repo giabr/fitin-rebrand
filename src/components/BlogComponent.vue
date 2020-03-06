@@ -2,7 +2,7 @@
  <div class="fi-blog">
  <v-container>
   <v-sheet
-    class="fi-blog mx-auto"
+    class="mx-auto"
     max-width="100%"
   >
     <v-slide-group
