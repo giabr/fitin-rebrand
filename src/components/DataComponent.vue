@@ -11,7 +11,14 @@
       <h1 class="fi-title text-uppercase accent--text">Do You Know?</h1>
       <v-row>
       <v-col cols="6">
-        <span class="fi-sub-title accent--text">13%</span>
+        <span class="fi-sub-title accent--text">
+          <count-up
+          :delay="1500"
+          :endVal="13"
+          :options="options1"
+          />
+        <span>%</span>
+        </span>
         <span class="fi-metric accent--text text-uppercase"> /year</span>
         <p class="fi-text">
           Global Trade The value of Indonesia's apparel imports also shows a positive growth trend
@@ -20,7 +27,14 @@
         </p>
       </v-col>
       <v-col cols="6">
-        <span class="fi-sub-title accent--text">17.6%</span>
+        <span class="fi-sub-title accent--text">
+          <count-up
+          :delay="1500"
+          :endVal="17.6"
+          :options="options2"
+          />
+        <span>%</span>
+        </span>
         <span class="fi-metric accent--text text-uppercase"> /year</span>
         <p class="fi-text">
           Increased investment in the apparel sector grew with an average growth of 17.6% per year,
@@ -28,7 +42,13 @@
         </p>
       </v-col>
       <v-col cols="6">
-        <span class="fi-sub-title accent--text">308.4</span>
+        <span class="fi-sub-title accent--text">
+          <count-up
+          :delay="1500"
+          :endVal="308.4"
+          :options="options2"
+          />
+        </span>
         <span class="fi-metric accent--text text-uppercase"> thousand tons</span>
         <p class="fi-text">
           During the period 2009-2014 consumption of apparel in Indonesia grew by 6.89%
@@ -36,7 +56,13 @@
         </p>
       </v-col>
       <v-col cols="6">
-        <span class="fi-sub-title accent--text">1,861</span>
+        <span class="fi-sub-title accent--text">
+          <count-up
+          :delay="1500"
+          :endVal="1864"
+          :options="options1"
+          />
+        </span>
         <span class="fi-metric accent--text text-uppercase"> schools</span>
         <p class="fi-text">
           In Indonesia, there were 1,861 extraordinary schools a year. DIY region has 76 or around
@@ -51,8 +77,26 @@
 </template>
 
 <script>
+import CountUp from 'vue-countup-v2';
+
 export default {
   name: 'DataComponent',
+  data() {
+    return {
+      options1: {
+        useEasing: true,
+        useGrouping: true,
+      },
+      options2: {
+        decimalPlaces: 1,
+        useEasing: true,
+        useGrouping: true,
+      },
+    };
+  },
+  components: {
+    CountUp,
+  },
 };
 </script>
 
