@@ -17,7 +17,7 @@
       </v-col>
       <v-col cols="6">
         <div class="fi-ig">
-        <iframe class="fi-ig" src="https://www.instagram.com/fashion.fitin/embed"></iframe>
+        <img src="../assets/idea.png" alt="">
         </div>
       </v-col>
     </v-row>
@@ -39,6 +39,15 @@ export default {
   }
   .fi-ig{
     padding-left: 15%;
+    position: relative;
+    height: 600px;
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      max-width: 500px;
+    }
   }
   .fi-title {
     font-family: 'Rubik';

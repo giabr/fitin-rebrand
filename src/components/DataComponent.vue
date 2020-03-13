@@ -1,13 +1,14 @@
 <template>
   <v-container class="fi-data">
     <v-row>
-    <v-col cols="5" class="fi-graph">
-      <img class="fi-img" src="../assets/data-pie.jpg" alt="">
+    <v-col cols="6" class="fi-graph">
+      <img class="fi-img" src="../assets/graph.png" alt="">
         <p class="fi-text">
+        <br>
           Waste Textile makes you need to add new space and environmental pollution.
         </p>
     </v-col>
-    <v-col cols="7">
+    <v-col cols="6">
       <h1 class="fi-title text-uppercase accent--text">Do You Know?</h1>
       <v-row>
       <v-col cols="6">
@@ -124,7 +125,6 @@ export default {
   }
   .fi-text{
     text-align: justify;
-    padding-right: 40px;
   }
   .fi-img{
     width: 100%;

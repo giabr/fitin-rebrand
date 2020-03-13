@@ -1,10 +1,17 @@
 <template>
     <div class="fi-banner">
-      <h1
-        class="text-uppercase accent--text"
-      >
-        Let's <span class="primary--text">Change</span> Together
-      </h1>
+      <v-row>
+      <v-col cols="6">
+        <h1
+          class="text-uppercase accent--text fi-action"
+        >
+          Let's <span class="primary--text">Change</span> Together
+        </h1>
+      </v-col>
+      <v-col cols="6">
+        <img class="fi-img" src="../assets/hero.png" alt="">
+      </v-col>
+      </v-row>
     </div>
 </template>
 
@@ -17,11 +24,18 @@ export default {
 
 <style lang="scss" scoped>
 .fi-banner {
-  padding-top: 10%;
-  text-align: center;
+  padding: 5% 0;
   font-family: Rubik;
   font-style: normal;
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 3.5em;
+  .fi-action{
+    padding: 20%;
+    text-align: left;
+  }
+  .fi-img{
+    width: 100%;
+    height: auto;
+  }
 }
 </style>

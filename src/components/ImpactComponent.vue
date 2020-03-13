@@ -30,9 +30,9 @@ export default {
   data() {
     return {
       videos: [
-        { id: 1, content: '<iframe width=80% height=500 src="https://www.youtube.com/embed/yLw8IojFaUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' },
-        { id: 2, content: '<iframe width=80% height=500 src="https://www.youtube.com/embed/ql6N82eLDhU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' },
-        { id: 3, content: '<iframe width=80% height=500 src="https://www.youtube.com/embed/CD6R9ufjr18" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' },
+        { id: 1, content: '<iframe width=80% height=500 src="https://www.youtube.com/embed/CD6R9ufjr18" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' },
+        { id: 2, content: '<iframe width=80% height=500 src="https://www.youtube.com/embed/yLw8IojFaUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' },
+        { id: 3, content: '<iframe width=80% height=500 src="https://www.youtube.com/embed/ql6N82eLDhU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' },
       ],
     };
   },

@@ -1,22 +1,46 @@
 <template>
     <div class="fi-card">
-        <instagram-embed
-          :url="product.url"
-          :max-width=300
-          :hide-caption=true
-        />
+      <v-card
+        class="ma-4"
+        max-width="350"
+      >
+        <v-img
+          class="white--text align-end"
+          height="350px"
+          width="100%"
+          :src="product.url"
+        >
+          <!-- <v-card-title>{{product.title}}</v-card-title> -->
+        </v-img>
+        <v-card-subtitle class="fi-title accent--text">{{product.title}}</v-card-subtitle>
+      </v-card>
     </div>
 </template>
 
 <script>
-import InstagramEmbed from 'vue-instagram-embed';
 
 export default {
   components: {
-    InstagramEmbed,
+
   },
   props: {
     product: Object,
   },
 };
 </script>
+
+<style lang="scss" scoped>
+  .fi-card{
+   .fi-img{
+     width: 350;
+   }
+   .fi-title{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10%;
+   }
+  }
+</style>
