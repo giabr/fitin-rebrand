@@ -18,7 +18,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+@font-face {
+  font-family: "Nexa-Bold";
+  src: url("assets/fonts/NexaBlack.otf") format("truetype");
+}
  #app {
    margin: 0;
    padding: 0;

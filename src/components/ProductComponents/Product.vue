@@ -1,18 +1,19 @@
 <template>
     <div class="fi-card">
       <v-card
-        class="ma-4"
+        class="ma-4 fi-card-style"
         max-width="350"
+        elevation="0"
       >
         <v-img
           class="white--text align-end"
-          height="350px"
+          height="200px"
           width="100%"
           :src="product.url"
         >
           <!-- <v-card-title>{{product.title}}</v-card-title> -->
         </v-img>
-        <v-card-subtitle class="fi-title accent--text">{{product.title}}</v-card-subtitle>
+        <v-card-subtitle class="fi-title tertiary--text">{{product.title}}</v-card-subtitle>
       </v-card>
     </div>
 </template>
@@ -31,11 +32,15 @@ export default {
 
 <style lang="scss" scoped>
   .fi-card{
+   .fi-card-style{
+     border-radius: 0 !important;
+     margin: 0 2%;
+   }
    .fi-img{
      width: 350;
    }
    .fi-title{
-    font-family: Rubik;
+    font-family: 'Nexa-Bold';
     font-style: normal;
     font-weight: bold;
     font-size: 1.5em;

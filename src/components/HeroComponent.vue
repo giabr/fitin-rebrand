@@ -6,8 +6,10 @@
       </v-col>
       <v-col cols="6">
         <div class="text-uppercase white--text intro-title">
-          <h1 class="fi-title-small">little <span class="primary--text">act</span></h1>
-          <h2 class="fi-title-big"><span class="primary--text">big </span>impact</h2>
+          <div class="fi-title">
+            <h1 class="tertiary--text">little <span class="right white--text">act,</span></h1>
+            <h1 class="tertiary--text"><span class="right white--text">big </span>impact.</h1>
+        </div>
         </div>
       </v-col>
     </v-row>
@@ -21,17 +23,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .fi-hero {
   height: 700px;
-  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url('../assets/intro.jpg');
-  background-size: 100% auto;
-  background-position: 50% 70%;
+  background: url('../assets/intro.jpg');
+  background-size: cover;
+  background-position:center;
   position: relative;
-  padding: 0 5%;
+  padding: 0 8%;
   .intro-video{
+    border-radius: 25px;
     margin: 0;
-    width: 45%;
-    height: 70%;
+    width: 40%;
+    height: 55%;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -39,25 +43,17 @@ export default {
   }
   .intro-title{
     margin: 0;
-    padding-left: 5%;
     position: absolute;
-    top: 65%;
+    padding-left: 2%;
+    top: 35%;
     -ms-transform: translateY(-65%);
     transform: translateY(-40%);
   }
-  .fi-title-small {
-    font-family: Rubik;
+  .fi-title {
+    font-family: 'Nexa-Bold';
     font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 57px;
-  }
-  .fi-title-big {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 96px;
-    line-height: 114px;
+    font-size: 40px;
+    line-height: 100px;
   }
 }
 </style>

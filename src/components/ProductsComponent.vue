@@ -1,5 +1,8 @@
 <template>
   <v-container fluid class="fi-products">
+    <div class="title-img">
+      <h1 class="fi-title text-uppercase tertiary--text">Our Product</h1>
+    </div>
   <v-sheet
     class="mx-auto"
     max-width="1200"
@@ -46,6 +49,23 @@ export default {
 
 <style lang="scss" scoped>
   .fi-products{
-   padding-bottom: 10%;
+   padding: 8%;
+   padding-bottom: 0;
+   .title-img{
+     padding-bottom: 40px;
+      .fi-title {
+      height: 200px;
+      background: url('../assets/clip-sign-in.svg');
+      background-repeat: no-repeat;
+      background-position: 33%;
+      font-family: 'Nexa-Bold';
+      font-style: normal;
+      text-align: center;
+      font-size: 40px;
+      line-height: 100px;
+      text-align: center;
+      padding-top: 120px;
+    }
+   }
   }
 </style>

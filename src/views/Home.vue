@@ -3,13 +3,12 @@
     <base-appbar></base-appbar>
     <v-content>
       <Hero />
-      <About />
-      <Members />
-      <Data />
-      <Actions />
-      <Banner />
       <Products />
+      <Data />
+      <About />
+      <Actions />
       <Impact />
+      <Members />
       <Blog />
       <Testimonies />
     </v-content>
@@ -24,7 +23,6 @@ import Hero from '@/components/HeroComponent.vue';
 import About from '@/components/AboutComponent.vue';
 import Members from '@/components/MembersComponent.vue';
 import Data from '@/components/DataComponent.vue';
-import Banner from '@/components/BannerComponent.vue';
 import Actions from '@/components/ActionsComponent.vue';
 import Products from '@/components/ProductsComponent.vue';
 import Impact from '@/components/ImpactComponent.vue';
@@ -37,13 +35,12 @@ export default {
     BaseAppbar,
     // BaseFooter,
     Hero,
-    About,
-    Members,
-    Data,
-    Actions,
-    Banner,
     Products,
+    Data,
+    About,
+    Actions,
     Impact,
+    Members,
     Blog,
     Testimonies,
   },

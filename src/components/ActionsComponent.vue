@@ -1,66 +1,64 @@
 <template>
   <v-container fluid class="fi-actions">
-    <div class="fi-how">
-      <v-container>
-        <h1 class="fi-title text-uppercase white--text">How We Change</h1>
-        <v-row>
-          <step-component v-for="step in steps" :key="step" :total=4 :content="step"/>
-        </v-row>
-      </v-container>
-    </div>
+    <v-row>
+      <v-col cols="6" class="fi-img-div">
+        <img class="fi-img" src="../assets/ceo.svg" alt="" srcset="">
+        <h2 class="fi-sub-title tertiary--text">Ricky Chandra S.</h2>
+        <p class="fi-position tertiary--text">CEO FITIN</p>
+      </v-col>
+      <v-col cols="6">
+        <h1 class="fi-title tertiary--text">from your little action,
+          <br>to big impact in our future</h1>
+        <p class="fi-text tertiary--text">
+          Fit in provided to solve our problem about waste fashion. Circular economy can
+          answer this problem that see the challenge from waste to benefit in our life.
+          Fit in have recycled many waste fashion and convert it to more usefull product.
+        </p>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
-import StepComponent from './ActionComponents/StepComponent.vue';
 
 export default {
   name: 'ActionsComponent',
-  components: {
-    StepComponent,
-  },
-  data() {
-    return {
-      steps: [
-        { num: 1, title: 'save space', content: 'after processing' },
-        { num: 2, title: 'make money', content: 'every transaction' },
-        { num: 3, title: 'share story', content: 'journey of life' },
-        { num: 4, title: 'save environment', content: 'handmade product' },
-      ],
-    };
-  },
 };
 </script>
 
 <style lang="scss" scoped>
 .fi-actions {
-  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url('../assets/step.jpg');
-  background-size: cover;
+  background: url('../assets/bg-action.jpg');
+  background-size: 100% 100%;
   background-position: center;
-  padding: 5% 0;
-  .fi-how{
-    height: 500px;
-  }
-  .fi-title {
-    font-family: Rubik;
+  padding: 8%;
+    .fi-img-div{
+      padding-top: 8%;
+      text-align: center;
+      .fi-sub-title{
+      padding-top: 5%;
+      font-family: 'Nexa-Bold';
+      font-style: normal;
+      font-size: 30px;
+      }
+      .fi-position{
+      font-size: 30px;
+      }
+    }
+    .fi-title {
+    font-family: 'Nexa-Bold';
     font-style: normal;
-    text-align: center;
-    font-weight: bold;
-    font-size: 3em;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: left;
+    padding-top: 30%;
   }
-  .fi-text {
+    .fi-text {
     margin-top: 15px;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     text-align: justify;
-  }
-  .fi-banner {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
   }
 }
 </style>

@@ -1,15 +1,12 @@
 <template>
-  <v-container class="fi-data">
+  <v-container fluid class="fi-data">
     <v-row>
-    <v-col cols="6" class="fi-graph">
-      <img class="fi-img" src="../assets/graph.png" alt="">
-        <p class="fi-text">
-        <br>
-          Waste Textile makes you need to add new space and environmental pollution.
-        </p>
+    <v-col cols="5" class="fi-graph">
+      <img class="fi-img" src="../assets/data.svg" alt="">
     </v-col>
-    <v-col cols="6">
-      <h1 class="fi-title text-uppercase accent--text">Do You Know?</h1>
+    <v-col cols="7">
+      <h1 class="fi-title text-uppercase tertiary--text">
+        BORN FROM FASHION WASTE AND DISABILITIES MASTERPIECE</h1>
       <v-row>
       <v-col cols="6">
         <span class="fi-sub-title accent--text">
@@ -103,15 +100,19 @@ export default {
 
 <style lang="scss" scoped>
 .fi-data {
-  padding: 5% 0;
+  background: url('../assets/bg-data.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 8%;
+  padding-bottom: 15%;
   .fi-graph{
     padding-right: 5%;
   }
   .fi-title {
-    font-family: Rubik;
+    font-family: 'Nexa-Bold';
     font-style: normal;
-    font-weight: bold;
-    font-size: 3em;
+    font-size: 40px;
+    line-height: 50px;
   }
   .fi-sub-title{
     font-family: Rubik;
@@ -129,7 +130,6 @@ export default {
   .fi-img{
     width: 100%;
     height: auto;
-    padding-top: 20%;
   }
 }
 </style>
