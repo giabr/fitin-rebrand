@@ -8,13 +8,12 @@
     max-width="1200"
   >
     <v-slide-group
-      v-model="model"
       class="pa-4"
       show-arrows
     >
       <v-slide-item
-        v-for="product in products"
-        :key="product"
+        v-for="(product, index) in products"
+        :key="index"
       >
         <product :product="product" />
       </v-slide-item>

@@ -6,13 +6,12 @@
     max-width="100%"
   >
     <v-slide-group
-      v-model="model"
       class="pa-4"
       show-arrows
     >
       <v-slide-item
-        v-for="blog in blogs"
-        :key="blog"
+        v-for="(blog, index) in blogs"
+        :key="index"
       >
         <blog-card :blog="blog" />
       </v-slide-item>
