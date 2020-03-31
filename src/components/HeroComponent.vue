@@ -26,7 +26,7 @@ export default {
 
 .fi-hero {
   height: 700px;
-  background: url('../assets/intro.jpg');
+  background: url('../assets/intro-bg.jpg');
   background-size: cover;
   background-position:center;
   position: relative;

@@ -100,9 +100,10 @@ export default {
 
 <style lang="scss" scoped>
 .fi-data {
-  background: url('../assets/bg-data.jpg');
-  background-size: 100% 100%;
-  background-position: center;
+  background: url('../assets/data-bg.jpg');
+  background-size: 100% auto;
+  background-position: 100% 101%;
+  background-repeat: no-repeat;
   padding: 8%;
   padding-bottom: 15%;
   .fi-graph{

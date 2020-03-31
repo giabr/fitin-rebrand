@@ -50,7 +50,7 @@ export default {
 <style lang="scss" scoped>
   .fi-products{
    padding: 8%;
-   padding-bottom: 0;
+   padding-bottom: 2%;
    .title-img{
      padding-bottom: 40px;
       .fi-title {
