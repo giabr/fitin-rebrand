@@ -4,13 +4,13 @@
     <v-content>
       <Hero />
       <Products />
+      <Blog />
       <Data />
       <About />
       <Actions />
       <Impact />
       <Members />
-      <Blog />
-      <Testimonies />
+      <Contact />
     </v-content>
     <!-- <base-footer></base-footer> -->
   </div>
@@ -27,7 +27,7 @@ import Actions from '@/components/ActionsComponent.vue';
 import Products from '@/components/ProductsComponent.vue';
 import Impact from '@/components/ImpactComponent.vue';
 import Blog from '@/components/BlogComponent.vue';
-import Testimonies from '@/components/TestimoniesComponent.vue';
+import Contact from '../components/ContactComponent.vue';
 
 export default {
   name: 'Home',
@@ -42,7 +42,7 @@ export default {
     Impact,
     Members,
     Blog,
-    Testimonies,
+    Contact,
   },
 };
 </script>

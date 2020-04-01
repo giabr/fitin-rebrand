@@ -17,7 +17,7 @@
       </v-col>
       <v-col cols="6">
         <div class="fi-img">
-        <img src="../assets/about-img.svg" alt="">
+        <img src="../assets/about-img.png" alt="">
         </div>
       </v-col>
     </v-row>

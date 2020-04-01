@@ -2,7 +2,7 @@
   <v-container fluid class="fi-actions">
     <v-row>
       <v-col cols="6" class="fi-img-div">
-        <img class="fi-img" src="../assets/action-ceo.svg" alt="" srcset="">
+        <img class="fi-img" src="../assets/action-ceo.png" alt="" srcset="">
         <h2 class="fi-sub-title tertiary--text">Ricky Chandra S.</h2>
         <p class="fi-position tertiary--text">CEO FITIN</p>
       </v-col>

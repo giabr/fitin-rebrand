@@ -2,7 +2,7 @@
   <v-container fluid class="fi-data">
     <v-row>
     <v-col cols="5" class="fi-graph">
-      <img class="fi-img" src="../assets/data.svg" alt="">
+      <img class="fi-img" src="../assets/data-img.png" alt="">
     </v-col>
     <v-col cols="7">
       <h1 class="fi-title text-uppercase tertiary--text">

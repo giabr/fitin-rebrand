@@ -50,12 +50,12 @@ export default {
 <style lang="scss" scoped>
   .fi-products{
    padding: 8%;
-   padding-bottom: 2%;
+   padding-bottom: 0;
    .title-img{
      padding-bottom: 40px;
       .fi-title {
       height: 200px;
-      background: url('../assets/clip-sign-in.svg');
+      background: url('../assets/product-img-title.png');
       background-repeat: no-repeat;
       background-position: 33%;
       font-family: 'Nexa-Bold';
