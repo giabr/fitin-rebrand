@@ -78,7 +78,12 @@ export default {
 
 <style lang="scss" scoped>
   .fi-contact{
+   background: url('../assets/contact-bg.png');
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   background-position: bottom;
    padding: 8%;
+   padding-top: 0;
    .title-img{
      padding-bottom: 40px;
       .fi-title {

@@ -12,13 +12,13 @@
       <Members />
       <Contact />
     </v-content>
-    <!-- <base-footer></base-footer> -->
+    <base-footer></base-footer>
   </div>
 </template>
 
 <script>
 import BaseAppbar from '@/components/BaseComponents/BaseAppbar.vue';
-// import BaseFooter from '@/components/BaseComponents/BaseFooter.vue';
+import BaseFooter from '@/components/BaseComponents/BaseFooter.vue';
 import Hero from '@/components/HeroComponent.vue';
 import About from '@/components/AboutComponent.vue';
 import Members from '@/components/MembersComponent.vue';
@@ -33,7 +33,7 @@ export default {
   name: 'Home',
   components: {
     BaseAppbar,
-    // BaseFooter,
+    BaseFooter,
     Hero,
     Products,
     Data,
