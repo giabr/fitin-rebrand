@@ -17,11 +17,11 @@
       </v-col>
       <v-col cols="6">
         <div class="fi-img">
-        <img src="../assets/about.svg" alt="">
+        <img src="../assets/about-img.png" alt="">
         </div>
       </v-col>
     </v-row>
-    <img class="fi-img-attr" src="../assets/about-attr.svg" alt="" srcset="">
+    <img class="fi-img-attr" src="../assets/about-info.png" alt="" srcset="">
   </v-container>
 </template>
 

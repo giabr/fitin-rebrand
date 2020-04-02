@@ -1,6 +1,9 @@
 <template>
  <div class="fi-blog">
  <v-container>
+    <div class="title-img">
+      <h1 class="fi-title text-uppercase tertiary--text">Our latest news</h1>
+    </div>
   <v-sheet
     class="mx-auto"
     max-width="100%"
@@ -56,7 +59,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.fi-blog{
-padding: 5% 0;
+  .fi-blog{
+   padding: 8%;
+  //  padding-bottom: 0;
+   .title-img{
+     padding-bottom: 50px;
+      .fi-title {
+      height: 200px;
+      background: url('../assets/blog-img-title.png');
+      background-repeat: no-repeat;
+      background-position: 70%;
+      font-family: 'Nexa-Bold';
+      font-style: normal;
+      text-align: center;
+      font-size: 40px;
+      line-height: 130px;
+      text-align: center;
+      padding-top: 120px;
+    }
+   }
 }
 </style>

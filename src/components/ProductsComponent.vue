@@ -54,7 +54,7 @@ export default {
      padding-bottom: 40px;
       .fi-title {
       height: 200px;
-      background: url('../assets/clip-sign-in.svg');
+      background: url('../assets/product-img-title.png');
       background-repeat: no-repeat;
       background-position: 33%;
       font-family: 'Nexa-Bold';

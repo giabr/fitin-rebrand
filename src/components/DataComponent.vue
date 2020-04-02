@@ -2,7 +2,7 @@
   <v-container fluid class="fi-data">
     <v-row>
     <v-col cols="5" class="fi-graph">
-      <img class="fi-img" src="../assets/data.svg" alt="">
+      <img class="fi-img" src="../assets/data-img.png" alt="">
     </v-col>
     <v-col cols="7">
       <h1 class="fi-title text-uppercase tertiary--text">
@@ -100,9 +100,10 @@ export default {
 
 <style lang="scss" scoped>
 .fi-data {
-  background: url('../assets/bg-data.jpg');
-  background-size: 100% 100%;
-  background-position: center;
+  background: url('../assets/data-bg.jpg');
+  background-size: 100% auto;
+  background-position: 100% 101%;
+  background-repeat: no-repeat;
   padding: 8%;
   padding-bottom: 15%;
   .fi-graph{

@@ -23,6 +23,14 @@ export default {
   font-family: "Nexa-Bold";
   src: url("assets/fonts/NexaBlack.otf") format("truetype");
 }
+@font-face {
+  font-family: "Nexa-Light";
+  src: url("assets/fonts/Nexa-Light.otf") format("truetype");
+}
+@font-face {
+  font-family: "Nexa";
+  src: url("assets/fonts/NexaRegular.otf") format("truetype");
+}
  #app {
    margin: 0;
    padding: 0;

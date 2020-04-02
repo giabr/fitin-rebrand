@@ -12,14 +12,11 @@
     >
     </v-carousel-item>
   </v-carousel>
-    <div class="fi-banner text-uppercase">
-      <h1 class="fi-title tertiary--text">This is how we <span class="primary--text">change
-        </span>
+    <!-- <div class="fi-banner text-uppercase">
+      <h1 class="fi-title tertiary--text"><span class="primary--text">This</span> is how
       </h1>
-      <h1 class="fi-title tertiary--text">Join us <span class="primary--text">now
-        </span> together
-      </h1>
-    </div>
+      <h1 class="fi-title-big tertiary--text">We <span class="primary--text">change</span></h1>
+    </div> -->
   </v-container>
 </template>
 
@@ -50,6 +47,13 @@ export default {
      font-weight: bold;
      text-align: center;
      font-size: 60px;
+   }
+    .fi-title-big {
+     font-family: 'Nexa-Bold';
+     font-style: normal;
+     font-weight: bold;
+     text-align: center;
+     font-size: 100px;
    }
    .fi-banner{
      padding-top: 80px;
