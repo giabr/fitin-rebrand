@@ -9,13 +9,13 @@
         <img src="../../assets/logo-white.png" alt="" srcset="">
       </v-col>
       <v-col cols="6">
-        <v-row>
-          <v-col cols="6">
-            <p>Home</p>
-            <p>Product</p>
-            <p>Blog</p>
-            <p>FAQ</p>
-            <p>Privacy Policy</p>
+        <v-row style="letter-spacing:0.1em">
+          <v-col cols="6 text-uppercase">
+            <a class="menu-text white--text"
+            v-for="(menu, index) in menus"
+            :key="index"
+            :href="menu.route"
+            ><p>{{ menu.title }}</p></a>
           </v-col>
           <v-col cols="6">
             <p class="fi-title">Get in touch</p>
@@ -65,6 +65,23 @@
   </v-footer>
 </template>
 
+<script>
+export default {
+  name: 'BaseFooter',
+  data() {
+    return {
+      menus: [
+        { title: 'Home', route: '/home' },
+        { title: 'Product', route: '/product' },
+        { title: 'Blog', route: '/blog' },
+        { title: 'FAQ', route: '/faq' },
+        { title: 'Privacy Policy', route: '/privacy-policy' },
+      ],
+    };
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 .dr-footer{
   padding: 8%;
@@ -79,13 +96,16 @@
     font-size: 24px;
   }
   .fi-phone{
-    font-family: 'Nexa-Light';
-    font-size: 16px;
+    font-family: 'Nexa';
+    font-size: 14px;
     margin-left: 10px;
   }
   p{
-    font-family: 'Nexa-Light';
-    font-size: 16px;
+    font-family: 'Nexa';
+    font-size: 14px;
+  }
+  a{
+    text-decoration: none;
   }
 }
 </style>
