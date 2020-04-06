@@ -5,7 +5,7 @@
     </div>
   <v-sheet
     class="mx-auto"
-    max-width="1200"
+    max-width="100%"
   >
     <v-slide-group
       v-model="model"

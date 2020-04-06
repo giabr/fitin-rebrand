@@ -2,7 +2,7 @@
     <div class="fi-card">
       <v-card
         class="ma-4 fi-card-style"
-        max-width="350"
+        width="350"
         elevation="0"
       >
         <v-img

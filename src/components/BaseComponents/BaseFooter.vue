@@ -36,27 +36,37 @@
               Indonesia
               55584</p>
             <div>
-              <font-awesome-icon
-              class="white--text text--darken-1 fi-social"
-              style="margin-left: 0;"
-              :icon="['fab','instagram-square']"
-              ></font-awesome-icon>
+              <a href="https://www.instagram.com/fashion.fitin/?hl=id" target="_blank">
+                <font-awesome-icon
+                class="white--text text--darken-1 fi-social"
+                style="margin-left: 0;"
+                :icon="['fab','instagram-square']"
+                ></font-awesome-icon>
+              </a>
+              <a href="https://www.linkedin.com/company/fitin-indonesia/" target="_blank">
               <font-awesome-icon
               class="white--text text--darken-1 fi-social"
               :icon="['fab','linkedin']"
               ></font-awesome-icon>
+              </a>
+              <a href="https://twitter.com/fitin_id" target="_blank">
               <font-awesome-icon
               class="white--text text--darken-1 fi-social"
               :icon="['fab','twitter-square']"
               ></font-awesome-icon>
+              </a>
+              <a href="https://web.facebook.com/fashion.fitin/" target="_blank">
               <font-awesome-icon
               class="white--text text--darken-1 fi-social"
               :icon="['fab','facebook-square']"
               ></font-awesome-icon>
+              </a>
+              <a href="mailto:fitinyourfashion@gmail.com?subject=Ask%20Fitin" target="_blank">
               <font-awesome-icon
               class="white--text text--darken-1 fi-social"
               :icon="['fa','envelope-square']"
               ></font-awesome-icon>
+              </a>
             </div>
           </v-col>
         </v-row>
@@ -72,10 +82,10 @@ export default {
     return {
       menus: [
         { title: 'Home', route: '/home' },
-        { title: 'Product', route: '/product' },
-        { title: 'Blog', route: '/blog' },
-        { title: 'FAQ', route: '/faq' },
-        { title: 'Privacy Policy', route: '/privacy-policy' },
+        { title: 'Product', route: '/maintenance' },
+        { title: 'Blog', route: '/maintenance' },
+        { title: 'FAQ', route: '/maintenance' },
+        { title: 'Privacy Policy', route: '/maintenance' },
       ],
     };
   },

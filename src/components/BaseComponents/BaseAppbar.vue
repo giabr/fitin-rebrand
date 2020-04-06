@@ -33,9 +33,9 @@ export default {
     return {
       menus: [
         { title: 'Home', route: '/home' },
-        { title: 'Product', route: '/product' },
-        { title: 'Blog', route: '/blog' },
-        { title: 'FAQ', route: '/faq' },
+        { title: 'Product', route: '/maintenance' },
+        { title: 'Blog', route: '/maintenance' },
+        { title: 'FAQ', route: '/maintenance' },
       ],
     };
   },
