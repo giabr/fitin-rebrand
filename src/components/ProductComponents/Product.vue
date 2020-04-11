@@ -7,9 +7,9 @@
       >
         <v-img
           class="white--text align-end"
-          height="200px"
+          height="300px"
           width="100%"
-          :src="product.url"
+          :src="require(`../../assets/products/${product.id}.jpg`)"
         >
           <!-- <v-card-title>{{product.title}}</v-card-title> -->
         </v-img>

@@ -29,8 +29,9 @@ export default {
 <style lang="scss" scoped>
 .fi-actions {
   background: url('../assets/action-bg.jpg');
-  background-size: 100% 100%;
-  background-position: center;
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
   padding: 8%;
     .fi-img-div{
       padding-top: 8%;
