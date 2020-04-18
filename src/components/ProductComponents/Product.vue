@@ -7,7 +7,7 @@
       >
         <v-img
           class="white--text align-end"
-          height="300px"
+          height="auto"
           width="100%"
           :src="require(`../../assets/products/${product.id}.jpg`)"
         >
@@ -40,12 +40,18 @@ export default {
      width: 350;
    }
    .fi-title{
-    font-family: 'Nexa-Bold';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.5em;
-    text-align: center;
-    padding: 10%;
+      font-family: 'Nexa-Bold';
+      font-style: normal;
+      font-weight: bold;
+      text-align: center;
+      padding: 10%;
+      font-size: 1rem;
+      @media only screen and (min-width: 600px) {
+        font-size: 1.3rem;
+      }
+      @media only screen and (min-width: 1264px) {
+        font-size: 1.5rem;
+      }
    }
   }
 </style>

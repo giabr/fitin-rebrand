@@ -3,24 +3,26 @@ import Vuetify from 'vuetify/lib';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
-  faEnvelopeSquare,
+  faEnvelope,
   faPhoneSquareAlt,
+  faBars,
 } from '@fortawesome/free-solid-svg-icons';
 import {
-  faInstagramSquare,
+  faInstagram,
   faLinkedin,
-  faTwitterSquare,
-  faFacebookSquare,
+  faTwitter,
+  faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 library.add(
-  faEnvelopeSquare,
+  faEnvelope,
   faPhoneSquareAlt,
-  faInstagramSquare,
+  faInstagram,
+  faBars,
   faLinkedin,
-  faTwitterSquare,
-  faFacebookSquare,
+  faTwitter,
+  faFacebook,
 );
 
 Vue.use(Vuetify);

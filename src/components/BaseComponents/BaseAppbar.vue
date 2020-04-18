@@ -5,13 +5,14 @@
     dark
     flat
     :elevate-on-scroll="true"
-    :elevation=1
+    :elevation=0
     class="menu"
   >
     <v-toolbar-title class="text-uppercase primary--text">
       <img class="fi-logo" src="../../assets/logo.png" alt="" srcset="">
-      <p class="font-weight-medium fi-logo-text">FIT <span class="font-weight-light">
-        IN</span></p>
+      <p class="font-weight-medium fi-logo-text">
+        FIT<span class="font-weight-light">IN</span>
+      </p>
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-btn
@@ -23,6 +24,30 @@
     >
       <span class="menu-text">{{ menu.title }}</span>
     </v-btn>
+    <v-menu offset-y>
+      <template v-slot:activator="{ on }">
+        <v-btn
+          target="_blank"
+          text
+          icon
+          v-on="on"
+          class="primary--text hidden-md-and-up"
+        >
+          <font-awesome-icon icon="bars"></font-awesome-icon>
+        </v-btn>
+      </template>
+      <v-list>
+        <v-list-item
+          v-for="(menu, index) in menus"
+          :key="index"
+          router :to="menu.route"
+        >
+          <v-list-item-title>
+            {{menu.title}}
+          </v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-menu>
   </v-app-bar>
 </template>
 
@@ -59,5 +84,6 @@ export default {
 }
 .menu-text{
   font-family: 'Nexa';
+  font-weight: 700;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="fi-about primary">
     <v-row>
-      <v-col cols="6" class="fi-desc">
+      <v-col cols="12" md="6" class="fi-desc">
         <h1 class="fi-title text-uppercase tertiary--text">What is Fitin?</h1>
         <p class="fi-text white--text">
           Fitin is a startup engaged in developing products and services to process textile/garment
@@ -15,7 +15,7 @@
           the use and use of fabrics.
         </p>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" md="6">
         <div class="fi-img">
         <img src="../assets/about-img.png" alt="">
         </div>
@@ -35,9 +35,9 @@ export default {
 <style lang="scss" scoped>
 .fi-about {
   padding: 8%;
-  .fi-desc{
-    // padding-right: 5%;
-  }
+  // .fi-desc{
+  //   // padding-right: 5%;
+  // }
   .fi-img{
     padding-left: 5%;
     position: relative;
@@ -53,9 +53,15 @@ export default {
   .fi-title {
     font-family: 'Nexa-Bold';
     font-style: normal;
-    font-size: 40px;
     line-height: 100px;
     text-align: right;
+    font-size: 2rem;
+    @media only screen and (min-width: 600px) {
+      font-size: 2.3rem;
+    }
+    @media only screen and (min-width: 1264px) {
+      font-size: 2.7rem;
+    }
   }
   .fi-text {
     margin-top: 15px;
