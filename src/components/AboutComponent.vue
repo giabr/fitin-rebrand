@@ -36,7 +36,7 @@ export default {
 .fi-about {
   padding: 8%;
   .fi-desc{
-    // padding-right: 5%;
+    padding-right: 5%;
   }
   .fi-img{
     padding-left: 5%;
