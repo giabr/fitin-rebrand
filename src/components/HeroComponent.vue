@@ -1,10 +1,10 @@
 <template>
   <v-container fluid class="fi-hero black">
     <v-row>
-      <v-col cols="6">
+      <v-col cols="12" md="6">
         <iframe class="intro-video" src="https://www.youtube.com/embed/a6m9c_84C0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" md="6">
         <div class="text-uppercase white--text intro-title">
           <div class="fi-title">
             <h1 class="tertiary--text">little <span class="right white--text">act,</span></h1>
@@ -52,8 +52,14 @@ export default {
   .fi-title {
     font-family: 'Nexa-Bold';
     font-style: normal;
-    font-size: 40px;
     line-height: 100px;
+    font-size: 2rem;
+    @media only screen and (min-width: 600px) {
+      font-size: 2.3rem;
+    }
+    @media only screen and (min-width: 1264px) {
+      font-size: 2.7rem;
+    }
   }
 }
 </style>

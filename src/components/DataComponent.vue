@@ -1,10 +1,10 @@
 <template>
   <v-container fluid class="fi-data">
     <v-row>
-    <v-col cols="5" class="fi-graph">
+    <v-col cols="12" md="5" class="fi-graph">
       <img class="fi-img" src="../assets/data-img.png" alt="">
     </v-col>
-    <v-col cols="7">
+    <v-col cols="12" md="7">
       <h1 class="fi-title text-uppercase tertiary--text">
         BORN FROM FASHION WASTE AND DISABILITIES MASTERPIECE</h1>
       <v-row>
@@ -112,8 +112,14 @@ export default {
   .fi-title {
     font-family: 'Nexa-Bold';
     font-style: normal;
-    font-size: 40px;
     line-height: 50px;
+    font-size: 2rem;
+    @media only screen and (min-width: 600px) {
+      font-size: 2.3rem;
+    }
+    @media only screen and (min-width: 1264px) {
+      font-size: 2.7rem;
+    }
   }
   .fi-sub-title{
     font-family: Rubik;

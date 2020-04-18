@@ -94,16 +94,25 @@ export default {
       font-family: 'Nexa-Bold';
       font-style: normal;
       text-align: center;
-      font-size: 40px;
       line-height: 100px;
       text-align: center;
       padding-top: 120px;
+      font-size: 2rem;
+      @media only screen and (min-width: 600px) {
+        font-size: 2.3rem;
+      }
+      @media only screen and (min-width: 1264px) {
+        font-size: 2.7rem;
+      }
     }
    }
    .fi-form{
      margin: auto;
-     width: 50%;
-     max-width: 500px;
+     width: 100%;
+     @media only screen and (min-width: 600px) {
+        width: 50%;
+        max-width: 500px;
+      }
     .fi-text{
      text-align: center;
      font-size: 15px;

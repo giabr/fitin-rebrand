@@ -72,10 +72,16 @@ export default {
       font-family: 'Nexa-Bold';
       font-style: normal;
       text-align: center;
-      font-size: 40px;
       line-height: 130px;
       text-align: center;
       padding-top: 120px;
+      font-size: 2rem;
+      @media only screen and (min-width: 600px) {
+        font-size: 2.3rem;
+      }
+      @media only screen and (min-width: 1264px) {
+        font-size: 2.7rem;
+      }
     }
    }
 }
