@@ -2,13 +2,23 @@
   <v-container fluid class="fi-member">
     <h1 class="fi-title text-uppercase tertiary--text">our team</h1>
     <div class="fi-team">
-    <v-row class="fi-team-2">
-      <v-col cols v-for="member in members_1" :key="member">
+    <v-row>
+      <v-col cols="12" v-for="member in members_1" :key="member"
+        xs="12"
+        sm="4"
+        md="4"
+        lg="2"
+      >
         <member :member=member></member>
       </v-col>
     </v-row>
     <v-row class="fi-team-2">
-      <v-col cols v-for="member in members_2" :key="member">
+      <v-col cols="12" v-for="member in members_2" :key="member"
+        xs="12"
+        sm="4"
+        md="4"
+        lg="4"
+      >
         <member :member=member></member>
       </v-col>
     </v-row>
@@ -53,7 +63,12 @@ export default {
   padding: 8%;
   .fi-team{
     padding: 8% 0;
-    .fi-team-2{
+  }
+  .fi-team-2{
+    @media only screen and (min-width: 600px) {
+      padding: 0;
+    }
+    @media only screen and (min-width: 1264px) {
       padding: 0 20%;
     }
   }

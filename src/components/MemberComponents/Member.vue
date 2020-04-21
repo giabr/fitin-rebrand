@@ -22,6 +22,15 @@ export default {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    max-width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    max-width: 180px;
+  }
 }
 .fi-sub-title{
 padding-top: 5%;
