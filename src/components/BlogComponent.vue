@@ -14,8 +14,8 @@
       show-arrows
     >
       <v-slide-item
-        v-for="blog in blogs"
-        :key="blog"
+        v-for="(blog, index) in blogs"
+        :key="index"
       >
         <blog-card :blog="blog" />
       </v-slide-item>
