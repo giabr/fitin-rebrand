@@ -3,7 +3,7 @@
     <h1 class="fi-title text-uppercase tertiary--text">our team</h1>
     <div class="fi-team">
     <v-row>
-      <v-col cols="12" v-for="member in members_1" :key="member"
+      <v-col cols="12" v-for="(member, index) in members_1" :key="index"
         xs="12"
         sm="4"
         md="4"
@@ -13,7 +13,7 @@
       </v-col>
     </v-row>
     <v-row class="fi-team-2">
-      <v-col cols="12" v-for="member in members_2" :key="member"
+      <v-col cols="12" v-for="(member, index) in members_2" :key="index"
         xs="12"
         sm="4"
         md="4"
