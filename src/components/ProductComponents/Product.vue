@@ -2,7 +2,7 @@
     <div class="fi-card">
       <div class="fi-card-style">
         <img
-          class="white--text align-end fi-img"
+          class="white--text fi-img"
           :src="require(`../../assets/products/${product.id}.jpg`)"
         >
         <p class="fi-title tertiary--text">{{product.title}}</p>
@@ -13,9 +13,6 @@
 <script>
 
 export default {
-  components: {
-
-  },
   props: {
     product: Object,
   },
