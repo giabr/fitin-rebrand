@@ -100,7 +100,7 @@ export default {
       line-height: 70px;
       font-size: 1.8rem;
     }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 780px) {
       margin-left: auto;
       line-height: 70px;
       font-size: 2.1rem;
