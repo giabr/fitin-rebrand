@@ -84,6 +84,9 @@ export default {
    background-position: bottom;
    padding: 8%;
    padding-top: 0;
+    @media only screen and (max-width: 600px) {
+      padding: 20% 8%;
+    }
    .title-img{
      padding-bottom: 40px;
       .fi-title {

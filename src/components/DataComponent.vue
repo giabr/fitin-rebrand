@@ -116,10 +116,9 @@ export default {
   .fi-title {
     font-family: 'Nexa-Bold';
     font-style: normal;
-    line-height: 50px;
     font-size: 2rem;
     @media only screen and (min-width: 300px) {
-      font-size: 2.3rem;
+      font-size: 1.5rem;
       text-align: center;
     }
     @media only screen and (min-width: 1024px) {
@@ -131,8 +130,7 @@ export default {
     font-family: Rubik;
     font-style: normal;
     font-weight: bold;
-    font-size: 3em;
-    @media only screen and (max-width: 600px) {
+    @media only screen and (min-width: 600px) {
       font-size: 2.5em;
     }
     @media only screen and (min-width: 1264px) {

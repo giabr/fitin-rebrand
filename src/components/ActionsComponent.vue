@@ -33,6 +33,9 @@ export default {
   background-position: top;
   background-repeat: no-repeat;
   padding: 8%;
+  @media only screen and (max-width: 600px) {
+    padding: 30% 8%;
+  }
     .fi-img-div{
       padding-top: 8%;
       text-align: center;
@@ -55,21 +58,29 @@ export default {
     font-style: normal;
     line-height: 50px;
     text-align: left;
-    padding-top: 30%;
     font-size: 2rem;
     @media only screen and (min-width: 600px) {
       font-size: 2.3rem;
+      padding-top: 0;
+    }
+    @media only screen and (min-width: 600px) {
+      font-size: 2.3rem;
+      padding-top: 30%;
     }
     @media only screen and (min-width: 1264px) {
       font-size: 2.7rem;
     }
   }
     .fi-text {
+    font-family: Rubik;
     margin-top: 15px;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     text-align: justify;
+    @media only screen and (max-width: 600px) {
+      font-size: 16px;
+    }
   }
 }
 </style>

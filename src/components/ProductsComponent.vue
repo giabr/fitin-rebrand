@@ -82,6 +82,9 @@ export default {
   .fi-products{
    padding: 8%;
    padding-bottom: 0;
+   @media only screen and (max-width: 600px) {
+    padding-bottom: 15%;
+   }
    .title-img{
      padding-bottom: 40px;
     .fi-title {
@@ -91,19 +94,20 @@ export default {
       font-family: 'Nexa-Bold';
       font-style: normal;
       text-align: center;
-      line-height: 100px;
       text-align: center;
       padding-top: 120px;
       font-size: 2rem;
       @media only screen and (min-width: 300px) {
         font-size: 2.3rem;
-        background-size: auto 80%;
+        background-size: auto 60%;
         background-position: 0%;
+        line-height: 60px;
       }
       @media only screen and (min-width: 768px) {
         font-size: 2.7rem;
         background-size: auto 90%;
         background-position: 33%;
+        line-height: 100px;
       }
     }
    }
