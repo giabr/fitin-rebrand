@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="fi-about primary">
     <v-row>
-      <v-col cols="12" md="6" class="fi-desc">
+      <v-col cols="12" lg="6" order="2" order-lg="1" class="fi-desc">
         <h1 class="fi-title text-uppercase tertiary--text">What is Fitin?</h1>
         <p class="fi-text white--text">
           Fitin is a startup engaged in developing products and services to process textile/garment
@@ -15,7 +15,7 @@
           the use and use of fabrics.
         </p>
       </v-col>
-      <v-col cols="12" md="6">
+      <v-col cols="12" lg="6" order="1" order-lg="2">
         <div class="fi-img">
         <img src="../assets/about-img.png" alt="">
         </div>
@@ -54,25 +54,55 @@ export default {
   .fi-img{
     padding-left: 5%;
     position: relative;
-    height: 600px;
+    height: 200px;
+    @media only screen and (min-width: 600px) {
+      height: 400px;
+      padding-left: 5%;
+      position: relative;
+    }
+    @media only screen and (min-width: 1024px) {
+      height: 600px;
+      padding-left: 5%;
+      position: relative;
+    }
+    @media only screen and (min-width: 1264px) {
+      height: 600px;
+      padding-left: 5%;
+      position: relative;
+    }
     img {
       position: absolute;
       top: 0;
       bottom: 0;
-      margin: auto;
+      margin: 0 auto;
       width: 100%;
+      @media only screen and (min-width: 600px) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: 0 auto;
+        width: 100%;
+      }
+      @media only screen and (min-width: 1264px) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: 0 auto;
+        width: 80%;
+      }
     }
   }
   .fi-title {
     font-family: 'Nexa-Bold';
     font-style: normal;
     line-height: 100px;
-    text-align: right;
+    text-align: center;
     font-size: 2rem;
     @media only screen and (min-width: 600px) {
       font-size: 2.3rem;
     }
     @media only screen and (min-width: 1264px) {
+      text-align: right;
       font-size: 2.7rem;
     }
   }

@@ -32,7 +32,6 @@ export default {
   padding: 0 8%;
   .intro-video{
     border-radius: 25px;
-    margin: 0 auto;
     margin-top: 80px;
     width: 100%;
     height: 100%;
