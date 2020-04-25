@@ -43,17 +43,17 @@
           Indonesia
           55584</p>
         <div>
+          <a v-for="(social, index) in socials" :key="index"
+          target="_blank"
+          v-bind:href="social.route">
           <v-btn
-            v-for="(social, index) in socials"
-            :key="index"
-            target="_blank"
-            router :to="social.route"
             depressed
             fab
             color="primary"
           >
             <font-awesome-icon class="fi-social" :icon="social.icon"></font-awesome-icon>
           </v-btn>
+          </a>
         </div>
       </v-col>
     </v-row>

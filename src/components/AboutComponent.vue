@@ -77,11 +77,15 @@ export default {
     }
   }
   .fi-text {
+    font-family: Rubik;
     margin-top: 15px;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     text-align: justify;
+    @media only screen and (max-width: 600px) {
+      font-size: 16px;
+    }
   }
   .fi-img{
     padding-top: 10%;

@@ -4,11 +4,12 @@
     <v-content>
       <Hero />
       <Products />
-      <Blog />
+      <!-- <Blog /> -->
       <Data />
       <About />
       <Actions />
-      <Impact />
+      <!-- <Impact /> -->
+      <Support />
       <Members />
       <Contact />
     </v-content>
@@ -25,8 +26,9 @@ import Members from '@/components/MembersComponent.vue';
 import Data from '@/components/DataComponent.vue';
 import Actions from '@/components/ActionsComponent.vue';
 import Products from '@/components/ProductsComponent.vue';
-import Impact from '@/components/ImpactComponent.vue';
-import Blog from '@/components/BlogComponent.vue';
+// import Impact from '@/components/ImpactComponent.vue';
+import Support from '@/components/SupportComponent.vue';
+// import Blog from '@/components/BlogComponent.vue';
 import Contact from '../components/ContactComponent.vue';
 
 export default {
@@ -39,9 +41,10 @@ export default {
     Data,
     About,
     Actions,
-    Impact,
+    // Impact,
     Members,
-    Blog,
+    Support,
+    // Blog,
     Contact,
   },
 };

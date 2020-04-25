@@ -43,8 +43,11 @@ export default {
       font-weight: bold;
       text-align: center;
       font-size: 1rem;
-      @media only screen and (min-width: 600px) {
+      @media only screen and (max-width: 600px) {
         font-size: 1.3rem;
+      }
+      @media only screen and (min-width: 1000px) {
+        font-size: 1.5rem;
       }
       @media only screen and (min-width: 1264px) {
         font-size: 1.5rem;

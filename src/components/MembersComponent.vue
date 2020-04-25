@@ -61,6 +61,9 @@ export default {
   background-position: bottom;
   background-repeat: no-repeat;
   padding: 8%;
+  @media only screen and (max-width: 600px) {
+    padding: 20% 8%;
+  }
   .fi-team{
     padding: 8% 0;
   }
