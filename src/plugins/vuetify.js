@@ -6,6 +6,8 @@ import {
   faEnvelope,
   faPhoneSquareAlt,
   faBars,
+  faDonate,
+  faGifts,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faInstagram,
@@ -23,6 +25,8 @@ library.add(
   faLinkedin,
   faTwitter,
   faFacebook,
+  faDonate,
+  faGifts,
 );
 
 Vue.use(Vuetify);
