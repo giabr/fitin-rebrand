@@ -23,7 +23,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .fi-hero {
   height: 700px;
   background: url('../assets/intro-bg.jpg');
@@ -39,26 +38,45 @@ export default {
     height: 100%;
     top: 50%;
     @media only screen and (min-width: 600px) {
-
-    }
-    @media only screen and (min-witdh: 1264px) {
-      position: absolute;
+      border-radius: 25px;
+      margin: 0;
       width: 40%;
       height: 55%;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    @media only screen and (min-width: 1264px) {
+      border-radius: 25px;
+      margin: 0;
+      width: 40%;
+      height: 55%;
+      position: absolute;
       top: 50%;
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
     }
   }
   .intro-title{
-    margin-top: 80px;
+    margin: 0;
+    position: absolute;
     padding-left: 2%;
+    top: 60%;
+    -ms-transform: translateY(-65%);
+    transform: translateY(-40%);
     @media only screen and (min-width: 600px) {
-
+      margin: 0;
+      position: absolute;
+      padding-left: 2%;
+      top: 35%;
+      -ms-transform: translateY(-65%);
+      transform: translateY(-40%);
     }
     @media only screen and (min-width: 1264px) {
       margin: 0;
       position: absolute;
+      padding-left: 2%;
       top: 35%;
       -ms-transform: translateY(-65%);
       transform: translateY(-40%);
@@ -67,15 +85,13 @@ export default {
   .fi-title {
     font-family: 'Nexa-Bold';
     font-style: normal;
-    line-height: 60px;
-    font-size: 1.45rem;
-    margin: 0 auto;
+    line-height: 50px;
+    font-size: 1.4rem;
     @media only screen and (min-width: 600px) {
-      line-height: 80px;
+      line-height: 70px;
       font-size: 2.1rem;
     }
     @media only screen and (min-width: 1264px) {
-      margin: 0;
       line-height: 100px;
       font-size: 2.7rem;
     }
