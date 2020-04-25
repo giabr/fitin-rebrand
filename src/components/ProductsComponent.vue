@@ -3,32 +3,26 @@
     <div class="title-img">
       <h1 class="fi-title text-uppercase tertiary--text">Our Product</h1>
     </div>
-    <v-sheet
-      class="mx-auto"
-      max-width="100%"
-    >
-      <v-slide-group
-        v-model="model"
-        class="pa-4"
-        show-arrows
-      >
-        <v-slide-item
-          v-for="product in products"
-          :key="product"
-        >
+    <div>
+      <VueSlickCarousel v-bind="settings">
+        <div v-for="(product, index) in products" :key="index">
           <product :product="product" />
-        </v-slide-item>
-      </v-slide-group>
-    </v-sheet>
+        </div>
+      </VueSlickCarousel>
+    </div>
   </v-container>
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel';
+import '../../node_modules/vue-slick-carousel/dist/vue-slick-carousel.css';
+import '../../node_modules/vue-slick-carousel/dist/vue-slick-carousel-theme.css';
 import Product from './ProductComponents/Product.vue';
 
 export default {
   name: 'ProductComponent',
   components: {
+    VueSlickCarousel,
     Product,
   },
   data() {
@@ -45,6 +39,40 @@ export default {
         { id: 9, title: 'Pouch Serut Upcycle' },
         { id: 10, title: 'Pouch Serut Upcycle' },
       ],
+      settings: {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      },
     };
   },
 };
@@ -60,7 +88,6 @@ export default {
       height: 200px;
       background: url('../assets/product-img-title.png');
       background-repeat: no-repeat;
-      background-position: 33%;
       font-family: 'Nexa-Bold';
       font-style: normal;
       text-align: center;
@@ -68,11 +95,15 @@ export default {
       text-align: center;
       padding-top: 120px;
       font-size: 2rem;
-      @media only screen and (min-width: 600px) {
+      @media only screen and (min-width: 300px) {
         font-size: 2.3rem;
+        background-size: auto 80%;
+        background-position: 0%;
       }
-      @media only screen and (min-width: 1264px) {
+      @media only screen and (min-width: 768px) {
         font-size: 2.7rem;
+        background-size: auto 90%;
+        background-position: 33%;
       }
     }
    }

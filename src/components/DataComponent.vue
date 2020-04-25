@@ -1,14 +1,18 @@
 <template>
   <v-container fluid class="fi-data">
     <v-row>
+    <v-col id="content-mobile">
+      <h1 class="fi-title text-uppercase tertiary--text">
+        BORN FROM FASHION WASTE AND DISABILITIES MASTERPIECE</h1>
+    </v-col>
     <v-col cols="12" md="5" class="fi-graph">
       <img class="fi-img" src="../assets/data-img.png" alt="">
     </v-col>
     <v-col cols="12" md="7">
-      <h1 class="fi-title text-uppercase tertiary--text">
+      <h1 class="fi-title text-uppercase tertiary--text" id="content-desktop">
         BORN FROM FASHION WASTE AND DISABILITIES MASTERPIECE</h1>
       <v-row>
-      <v-col cols="6">
+      <v-col cols="12" sm="12" md="6">
         <span class="fi-sub-title accent--text">
           <count-up
           :delay="1500"
@@ -24,7 +28,7 @@
           which is growing at 13% per year
         </p>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" sm="12" md="6">
         <span class="fi-sub-title accent--text">
           <count-up
           :delay="1500"
@@ -39,7 +43,7 @@
           with investment value increasing by 3.08% per year. Clothing industry increased by 3.4%
         </p>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" sm="12" md="6">
         <span class="fi-sub-title accent--text">
           <count-up
           :delay="1500"
@@ -53,7 +57,7 @@
           per year, an increase from 209.3 thousand tons in 2009 to 308.4 thousand tons in 2014.
         </p>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" sm="12" md="6">
         <span class="fi-sub-title accent--text">
           <count-up
           :delay="1500"
@@ -114,11 +118,13 @@ export default {
     font-style: normal;
     line-height: 50px;
     font-size: 2rem;
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 300px) {
       font-size: 2.3rem;
+      text-align: center;
     }
-    @media only screen and (min-width: 1264px) {
+    @media only screen and (min-width: 1024px) {
       font-size: 2.7rem;
+      text-align: left;
     }
   }
   .fi-sub-title{
@@ -126,6 +132,12 @@ export default {
     font-style: normal;
     font-weight: bold;
     font-size: 3em;
+    @media only screen and (max-width: 600px) {
+      font-size: 2.5em;
+    }
+    @media only screen and (min-width: 1264px) {
+      font-size: 2.7rem;
+    }
   }
   .fi-metric{
     font-family: Rubik;
@@ -137,6 +149,28 @@ export default {
   .fi-img{
     width: 100%;
     height: auto;
+  }
+  @media only screen and (min-width: 300px) {
+    #content-desktop{
+      display: none;
+    }
+    .fi-img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    #content-mobile{
+      display: none;
+    }
+    #content-desktop{
+      display: block;
+    }
+    .fi-img{
+      width: 100%;
+    }
   }
 }
 </style>

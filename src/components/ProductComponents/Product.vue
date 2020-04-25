@@ -1,29 +1,18 @@
 <template>
     <div class="fi-card">
-      <v-card
-        class="ma-4 fi-card-style"
-        width="350"
-        elevation="0"
-      >
-        <v-img
-          class="white--text align-end"
-          height="auto"
-          width="100%"
+      <div class="fi-card-style">
+        <img
+          class="white--text fi-img"
           :src="require(`../../assets/products/${product.id}.jpg`)"
         >
-          <!-- <v-card-title>{{product.title}}</v-card-title> -->
-        </v-img>
-        <v-card-subtitle class="fi-title tertiary--text">{{product.title}}</v-card-subtitle>
-      </v-card>
+        <p class="fi-title tertiary--text">{{product.title}}</p>
+      </div>
     </div>
 </template>
 
 <script>
 
 export default {
-  components: {
-
-  },
   props: {
     product: Object,
   },
@@ -32,19 +21,27 @@ export default {
 
 <style lang="scss" scoped>
   .fi-card{
-   .fi-card-style{
-     border-radius: 0 !important;
-     margin: 0 2%;
-   }
    .fi-img{
-     width: 350;
+     height: auto;
+     padding: 5%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     @media only screen and (min-width: 300px) {
+      max-width: 260px;
+     }
+     @media only screen and (min-width: 600px) {
+      max-width: 220px;
+     }
+     @media only screen and (min-width: 1264px) {
+      max-width: 320px;
+     }
    }
    .fi-title{
       font-family: 'Nexa-Bold';
       font-style: normal;
       font-weight: bold;
       text-align: center;
-      padding: 10%;
       font-size: 1rem;
       @media only screen and (min-width: 600px) {
         font-size: 1.3rem;

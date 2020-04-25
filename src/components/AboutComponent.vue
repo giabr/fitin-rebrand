@@ -21,7 +21,20 @@
         </div>
       </v-col>
     </v-row>
-    <img class="fi-img-attr" src="../assets/about-info.png" alt="" srcset="">
+    <v-row>
+      <v-col cols="12" md="3" sm="6">
+        <img class="fi-img-bottom" src="../assets/about-info-1.png" alt="">
+      </v-col>
+      <v-col cols="12" md="3" sm="6">
+        <img class="fi-img-bottom" src="../assets/about-info-2.png" alt="">
+      </v-col>
+      <v-col cols="12" md="3" sm="6">
+        <img class="fi-img-bottom" src="../assets/about-info-3.png" alt="">
+      </v-col>
+      <v-col cols="12" md="3" sm="6">
+        <img class="fi-img-bottom" src="../assets/about-info-4.png" alt="">
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -74,9 +87,18 @@ export default {
     padding-top: 10%;
     width: 95%;
   }
-  .fi-img-attr{
-    padding-top: 3%;
-    width: 100%;
+  .fi-img-bottom{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-height: 130px;
+    @media only screen and (min-width: 300px) {
+      max-height: 100px;
+    }
+    @media only screen and (min-width: 1024px) {
+      max-height: 110px;
+    }
   }
 }
 </style>

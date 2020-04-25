@@ -1,30 +1,17 @@
 <template>
-    <v-card
-    class="ma-4 fi-blog-card"
-    width="400"
-    elevation=1
-  >
+  <div class="fi-blog-card">
+  <v-card class="mx-auto fi-card-style">
     <v-img
-      class="white--text align-end fi-img"
+      class="white--text fi-img align-end"
       height="200px"
-      :src="blog.img"
+      :src="require(`../../assets/blogs/${blog.id}.jpg`)"
     >
-      <!-- <v-card-title>{{blog.title}}</v-card-title> -->
     </v-img>
-
-    <div class="fi-main">
-        <v-card-subtitle class="pb-0">{{blog.tag}}</v-card-subtitle>
-
-        <v-card-text class="text--primary">
-        <div>
-            <h1 class="fi-title">{{blog.title}}</h1>
-        </div>
-
-        <div><p class="fi-text">{{blog.caption}}</p></div>
-        </v-card-text>
-    </div>
-
-    <v-card-actions>
+    <v-card-title class="fi-title tertiary--text">{{blog.title}}</v-card-title>
+    <v-card-text class="text--primary fi-text-container">
+      <p class="fi-text">{{blog.caption}}</p>
+    </v-card-text>
+    <v-card-actions class="button-bottom">
       <v-btn
         color="primary"
         text
@@ -33,15 +20,14 @@
       </v-btn>
 
       <v-btn
-        :href=blog.url
-        target="_blank"
-        color="accent"
+        color="primary"
         text
       >
         Read More
       </v-btn>
     </v-card-actions>
   </v-card>
+  </div>
 </template>
 
 <script>
@@ -54,15 +40,28 @@ export default {
 
 <style lang="scss" scoped>
 .fi-blog-card{
-  .fi-main{
-    height: 180px;
+  width: 100%;
+  padding: 0 8%;
+  .fi-card-style{
+    width: 100%;
   }
-  .fi-title {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.25em;
-    padding-bottom: 10px;
+  .fi-img{
+    width: 400px;
+  }
+  .fi-title{
+    font-family: 'Nexa-Bold';
+    font-size: 1em;
+    text-align: justify;
+    line-height: 20px;
+    @media only screen and (max-width: 600px) {
+      font-size: 1em;
+    }
+    @media only screen and (min-width: 1264px) {
+      font-size: 1em;
+    }
+  }
+  .fi-text-container{
+    height: 130px;
   }
   .fi-text {
     font-style: normal;

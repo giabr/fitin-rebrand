@@ -6,9 +6,18 @@
   >
     <v-row>
       <v-col cols="6" md="4">
-        <img src="../../assets/logo-white.png" alt="" srcset="">
+        <img src="../../assets/logo-white.png" alt="" srcset="" class="desktop">
       </v-col>
-      <v-col cols="6" md="4" style="letter-spacing:0.1em; text-transform: uppercase">
+      <v-col cols="12" style="letter-spacing:0.1em; text-transform: uppercase"
+      class="mobile">
+        <a class="menu-text white--text"
+        v-for="(menu, index) in menus"
+        :key="index"
+        :href="menu.route"
+        > {{ menu.title }} <span class="fi-point">.</span> </a>
+      </v-col>
+      <v-col cols="6" md="4" style="letter-spacing:0.1em; text-transform: uppercase"
+      class="desktop">
         <a class="menu-text white--text"
         v-for="(menu, index) in menus"
         :key="index"
@@ -43,7 +52,7 @@
             fab
             color="primary"
           >
-            <font-awesome-icon :icon="social.icon" size="3x"></font-awesome-icon>
+            <font-awesome-icon class="fi-social" :icon="social.icon"></font-awesome-icon>
           </v-btn>
         </div>
       </v-col>
@@ -79,26 +88,70 @@ export default {
 .dr-footer{
   padding: 8%;
   .fi-social{
-    font-size: 40px;
-    margin: 10px;
+    @media only screen and (min-width: 300px) {
+      font-size: 2rem;
+    }
   }
   .fi-title {
     font-family: 'Nexa-Bold';
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    @media only screen and (min-width: 300px) {
+      font-size: 1.2rem;
+    }
+    @media only screen and (min-width: 1024px) {
+      font-size: 2rem;
+    }
   }
   .fi-phone{
     font-family: 'Nexa';
-    font-size: 14px;
     margin-left: 10px;
+    @media only screen and (min-width: 300px) {
+      font-size: 11px;
+    }
+    @media only screen and (min-width: 1024px) {
+      font-size: 14px;
+    }
   }
   p{
     font-family: 'Nexa';
-    font-size: 14px;
+    @media only screen and (min-width: 300px) {
+      font-size: 10px;
+    }
+    @media only screen and (min-width: 1024px) {
+      font-size: 14px;
+    }
   }
   a{
     text-decoration: none;
+    @media only screen and (min-width: 300px) {
+      font-size: 10px;
+    }
+    @media only screen and (min-width: 1024px) {
+      font-size: 14px;
+    }
+  }
+  .fi-point{
+    line-height: 1.4;
+    font-size: 1em;
+    font-weight: 500;
+  }
+  @media only screen and (min-width: 300px) {
+    .desktop{
+      display: none;
+    }
+    .mobile{
+      display: block;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .desktop{
+      display: block;
+    }
+    .mobile{
+      display: none;
+    }
   }
 }
 </style>
