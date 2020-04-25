@@ -67,15 +67,24 @@ export default {
     transform: translateY(-40%);
     @media only screen and (min-width: 600px) {
       margin: 0;
-      position: absolute;
+      right: 2%;
       padding-left: 2%;
-      top: 35%;
+      top: 45%;
+      -ms-transform: translateY(-65%);
+      transform: translateY(-40%);
+    }
+    @media only screen and (min-width: 1024px) {
+      margin: 0;
+      right: 5%;
+      padding-left: 2%;
+      top: 45%;
       -ms-transform: translateY(-65%);
       transform: translateY(-40%);
     }
     @media only screen and (min-width: 1264px) {
       margin: 0;
       position: absolute;
+      right: 10%;
       padding-left: 2%;
       top: 35%;
       -ms-transform: translateY(-65%);
@@ -88,6 +97,12 @@ export default {
     line-height: 50px;
     font-size: 1.4rem;
     @media only screen and (min-width: 600px) {
+      margin-left: auto;
+      line-height: 70px;
+      font-size: 1.8rem;
+    }
+    @media only screen and (min-width: 600px) {
+      margin-left: auto;
       line-height: 70px;
       font-size: 2.1rem;
     }
