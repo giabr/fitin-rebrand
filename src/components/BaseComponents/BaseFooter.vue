@@ -68,6 +68,7 @@ export default {
       menus: [
         { title: 'Home', route: '/home' },
         { title: 'Product', route: '/maintenance' },
+        { title: 'Donation', route: '/donation' },
         { title: 'Blog', route: '/maintenance' },
         { title: 'FAQ', route: '/maintenance' },
         { title: 'Privacy Policy', route: '/maintenance' },

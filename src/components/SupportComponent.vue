@@ -6,7 +6,7 @@
           <v-row v-for="(action, index) in actions" class="fi-action"
             :key="index">
               <div id="mobile">
-              <a v-bind:href="action.route" target="_blank">
+              <a v-bind:href="action.route">
                 <v-btn
                   class="fi-action-button"
                   depressed
@@ -21,7 +21,7 @@
               </a>
               </div>
               <div id="desktop">
-              <a v-bind:href="action.route" target="_blank">
+              <a v-bind:href="action.route">
               <v-row>
                 <v-col cols="2">
                   <v-btn
@@ -61,7 +61,7 @@ export default {
   data() {
     return {
       actions: [
-        { icon: ['fas', 'donate'], text: 'Throw your wastes to make valuable things. Click to donate your clothes', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
+        { icon: ['fas', 'donate'], text: 'Throw your wastes to make valuable things. Click to donate your clothes', route: '/donation' },
         { icon: ['fas', 'gifts'], text: 'Become a sustainable hero by using our product. Click for more info', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
         { icon: ['fab', 'instagram'], text: 'Follow & share fitin instagram to make more people know. Click to open our instagram', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
       ],

@@ -2,13 +2,14 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Maintenance from '../views/404.vue';
+import Donation from '../views/Donate.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: '',
     component: Home,
   },
   {
@@ -18,8 +19,13 @@ const routes = [
   },
   {
     path: '/maintenance',
-    name: 'Home',
+    name: 'Maintenance',
     component: Maintenance,
+  },
+  {
+    path: '/donation',
+    name: 'Donation',
+    component: Donation,
   },
   // {
   //   path: '/about',

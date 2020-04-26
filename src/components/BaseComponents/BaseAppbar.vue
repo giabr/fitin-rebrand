@@ -21,6 +21,7 @@
       text
       class="primary--text hidden-sm-and-down"
       router :to="menu.route"
+      @click.native="$router.go()"
     >
       <span class="menu-text">{{ menu.title }}</span>
     </v-btn>
@@ -41,6 +42,7 @@
           v-for="(menu, index) in menus"
           :key="index"
           router :to="menu.route"
+          @click.native="$router.go()"
         >
           <v-list-item-title>
             {{menu.title}}
@@ -59,6 +61,7 @@ export default {
       menus: [
         { title: 'Home', route: '/home' },
         { title: 'Product', route: '/maintenance' },
+        { title: 'Donation', route: '/donation' },
         { title: 'Blog', route: '/maintenance' },
         { title: 'FAQ', route: '/maintenance' },
       ],
