@@ -3,9 +3,10 @@
     <v-row>
       <v-col cols="12" xs=1 sm="6" lg="6" class="fi-container fi-darken-soft">
         <div class="fi-sub-container">
-          <div v-for="(action, index) in actions" class="fi-block"
+          <v-row v-for="(action, index) in actions" class="fi-action"
             :key="index">
-              <a v-bind:href="action.route" target="_blank" class="fi-inline fi-center">
+              <div id="mobile">
+              <a v-bind:href="action.route" target="_blank">
                 <v-btn
                   class="fi-action-button"
                   depressed
@@ -14,11 +15,31 @@
                   <font-awesome-icon class="fi-action-icon"
                   :icon="action.icon"></font-awesome-icon>
                 </v-btn>
+                <div class="fi-inline">
+                  <p class="fi-sub-title white--text">{{action.text}}</p>
+                </div>
               </a>
-              <div class="fi-inline">
-                <p class="fi-sub-title white--text">{{action.text}}</p>
               </div>
-          </div>
+              <div id="desktop">
+              <a v-bind:href="action.route" target="_blank">
+              <v-row>
+                <v-col cols="2">
+                  <v-btn
+                    class="fi-action-button"
+                    depressed
+                    fab
+                    color="primary">
+                    <font-awesome-icon class="fi-action-icon"
+                    :icon="action.icon"></font-awesome-icon>
+                  </v-btn>
+                </v-col>
+                <v-col cols="10">
+                  <p class="fi-sub-title white--text">{{action.text}}</p>
+                </v-col>
+              </v-row>
+              </a>
+              </div>
+          </v-row>
         </div>
       </v-col>
       <v-col cols="12" sm="6" lg="6" class="fi-container fi-darken">
@@ -40,9 +61,9 @@ export default {
   data() {
     return {
       actions: [
-        { icon: ['fas', 'gifts'], text: 'Become a sustainable hero by using our product', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
-        { icon: ['fas', 'donate'], text: 'Throw your clothes waste for donations', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
-        { icon: ['fab', 'instagram'], text: 'Follow & share our IG to make more people know', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
+        { icon: ['fas', 'donate'], text: 'Throw your wastes to make valuable things. Click to donate your clothes', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
+        { icon: ['fas', 'gifts'], text: 'Become a sustainable hero by using our product. Click for more info', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
+        { icon: ['fab', 'instagram'], text: 'Follow & share fitin instagram to make more people know. Click to open our instagram', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
       ],
     };
   },
@@ -55,6 +76,20 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0;
+  #mobile{
+    display: none;
+    @media only screen and (max-width: 600px) {
+      display: block;
+      width: 100%;
+    }
+  }
+  #desktop{
+    display: block;
+    @media only screen and (max-width: 600px) {
+      display: none;
+      width: 100%;
+    }
+  }
     @media only screen and (min-width: 300px) {
       background-position: 80%;
       height: auto;
@@ -63,26 +98,16 @@ export default {
       background-position: center;
       height: 100vh;
     }
-    .fi-center{
-      text-align: center;
+    a{
+      text-decoration: none;
     }
-    .fi-block{
-      display: inline-block;
-      @media only screen and (max-width: 600px) {
-        width: 100%;
-        padding-bottom: 5%;
-      }
+    .fi-action{
+      padding-bottom: 5%;
     }
-    .fi-inline{
-      float: left;
-      @media only screen and (max-width: 600px) {
-        display: block;
-        float: none;
-      }
-    }
-  // padding: 8%;
     .fi-action-button{
       @media only screen and (max-width: 600px) {
+        margin:0 auto;
+        display:block;
         width: 72px;
         height: 72px;
       }
@@ -91,8 +116,8 @@ export default {
         max-height: 42px;
       }
       @media only screen and (min-width: 1024px) {
-        max-width: 56px;
-        max-height: 56px;
+        max-width: 72px;
+        max-height: 72px;
       }
     }
     .fi-action-icon{
@@ -124,6 +149,9 @@ export default {
         transform: translateY(-50%);
       }
     }
+    .fi-inline{
+      display: inline;
+    }
     .fi-title {
     font-family: 'Nexa-Bold';
     font-style: normal;
@@ -144,24 +172,28 @@ export default {
     }
   }
     .fi-sub-title {
-    font-family: 'Nexa-Light';
+    font-family: Rubik;
     font-style: normal;
-    text-align: left;
-    padding: 0 8%;
     @media only screen and (max-width: 600px) {
       text-align: center;
       font-size: 1rem;
+      padding: 0 8%;
       padding-top: 2%;
     }
     @media only screen and (min-width: 600px) {
       font-size: 0.75rem;
+      text-align: left;
+      padding-right: 8%;
     }
     @media only screen and (min-width: 1000px) {
       font-size: 1rem;
     }
     @media only screen and (min-width: 1264px) {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
+  }
+  .fi-sub-title:hover{
+    color: #5AC8D8 !important;
   }
 }
 </style>

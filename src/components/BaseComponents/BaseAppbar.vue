@@ -8,10 +8,10 @@
     :elevation=0
     class="menu"
   >
-    <v-toolbar-title class="text-uppercase primary--text">
+    <v-toolbar-title class="primary--text">
       <img class="fi-logo" src="../../assets/logo.png" alt="" srcset="">
-      <p class="font-weight-medium fi-logo-text">
-        FIT<span class="font-weight-light">IN</span>
+      <p class="font-weight-medium fi-logo-1">
+        fit<span class="font-weight-light fi-logo-2">in</span>
       </p>
     </v-toolbar-title>
     <v-spacer></v-spacer>
@@ -71,11 +71,15 @@ export default {
 .menu{
   height: 100%;
 }
-.fi-logo-text{
+.fi-logo-1{
   font-size: 24px;
+  font-family: 'Nexa-Bold';
   display: inline-block;
   vertical-align: middle;
   margin-bottom: -4px;
+}
+.fi-logo-2{
+  font-family: 'Nexa';
 }
 .fi-logo{
   max-width: 36px;
