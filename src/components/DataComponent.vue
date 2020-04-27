@@ -130,8 +130,8 @@ export default {
     font-family: Rubik;
     font-style: normal;
     font-weight: bold;
-    @media only screen and (min-width: 600px) {
-      font-size: 2.5em;
+    @media only screen and (min-width: 300px) {
+      font-size: 2.5rem;
     }
     @media only screen and (min-width: 1264px) {
       font-size: 2.7rem;

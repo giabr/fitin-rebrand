@@ -16,7 +16,8 @@
                   :icon="action.icon"></font-awesome-icon>
                 </v-btn>
                 <div class="fi-inline">
-                  <p class="fi-sub-title white--text">{{action.text}}</p>
+                  <p class="fi-sub-title white--text">{{action.text}}
+                    <span class="fi-text-more-info"><br>Click for more information</span></p>
                 </div>
               </a>
               </div>
@@ -34,7 +35,9 @@
                   </v-btn>
                 </v-col>
                 <v-col cols="10">
-                  <p class="fi-sub-title white--text">{{action.text}}</p>
+                  <p class="fi-sub-title white--text">{{action.text}}
+                    <span class="fi-text-more-info">
+                      Click for more information</span></p>
                 </v-col>
               </v-row>
               </a>
@@ -61,9 +64,9 @@ export default {
   data() {
     return {
       actions: [
-        { icon: ['fas', 'donate'], text: 'Throw your wastes to make valuable things. Click to donate your clothes', route: '/donation' },
-        { icon: ['fas', 'gifts'], text: 'Become a sustainable hero by using our product. Click for more info', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
-        { icon: ['fab', 'instagram'], text: 'Follow & share fitin instagram to make more people know. Click to open our instagram', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
+        { icon: ['fas', 'donate'], text: 'Throw your wastes to make valuable things.', route: '/donation' },
+        { icon: ['fas', 'gifts'], text: 'Become a sustainable hero by using our product.', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
+        { icon: ['fab', 'instagram'], text: 'Follow & share our stories to make more people know.', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
       ],
     };
   },
@@ -184,6 +187,21 @@ export default {
       font-size: 0.75rem;
       text-align: left;
       padding-right: 8%;
+    }
+    @media only screen and (min-width: 1000px) {
+      font-size: 1rem;
+    }
+    @media only screen and (min-width: 1264px) {
+      font-size: 1.25rem;
+    }
+  }
+  .fi-text-more-info{
+    font-weight: bold;
+    @media only screen and (max-width: 600px) {
+      font-size: 1rem;
+    }
+    @media only screen and (min-width: 600px) {
+      font-size: 0.75rem;
     }
     @media only screen and (min-width: 1000px) {
       font-size: 1rem;

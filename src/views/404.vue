@@ -5,37 +5,18 @@
       <h1 class="white--text">Sorry, we're under development</h1>
       <h1 class="white--text">Contact us below</h1>
       <div class="fi-social-container" align="center">
-      <a href="https://www.instagram.com/fashion.fitin/?hl=id" target="_blank">
-      <font-awesome-icon
-      class="white--text text--darken-1 fi-social"
-      style="margin-left: 0;"
-      :icon="['fab','instagram-square']"
-      ></font-awesome-icon>
-      </a>
-      <a href="https://www.linkedin.com/company/fitin-indonesia/" target="_blank">
-      <font-awesome-icon
-      class="white--text text--darken-1 fi-social"
-      :icon="['fab','linkedin']"
-      ></font-awesome-icon>
-      </a>
-      <a href="https://twitter.com/fitin_id" target="_blank">
-      <font-awesome-icon
-      class="white--text text--darken-1 fi-social"
-      :icon="['fab','twitter-square']"
-      ></font-awesome-icon>
-      </a>
-      <a href="https://web.facebook.com/fashion.fitin/" target="_blank">
-      <font-awesome-icon
-      class="white--text text--darken-1 fi-social"
-      :icon="['fab','facebook-square']"
-      ></font-awesome-icon>
-      </a>
-      <a href="mailto:fitinyourfashion@gmail.com?subject=Ask%20Fitin" target="_blank">
-      <font-awesome-icon
-      class="white--text text--darken-1 fi-social"
-      :icon="['fa','envelope-square']"
-      ></font-awesome-icon>
-      </a>
+        <a v-for="(social, index) in socials" :key="index"
+          target="_blank"
+          v-bind:href="social.route">
+          <v-btn
+            depressed
+            fab
+            color="primary"
+          >
+            <font-awesome-icon class="fi-social" :icon="social.icon"></font-awesome-icon>
+          </v-btn>
+        </a>
+      <h1 class="white--text" style="padding-top:5%">Back to <a href="/home">home</a></h1>
     </div>
     </div>
   </div>
@@ -44,6 +25,17 @@
 <script>
 export default {
   name: '404',
+  data() {
+    return {
+      socials: [
+        { icon: ['fab', 'instagram'], route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
+        { icon: ['fab', 'linkedin'], route: 'https://www.linkedin.com/company/fitin-indonesia/' },
+        { icon: ['fab', 'twitter'], route: 'https://twitter.com/fitin_id' },
+        { icon: ['fab', 'facebook'], route: 'https://web.facebook.com/fashion.fitin/' },
+        { icon: ['fa', 'envelope'], route: 'mailto:fitinyourfashion@gmail.com?subject=Ask%20Fitin' },
+      ],
+    };
+  },
 };
 </script>
 
@@ -76,6 +68,10 @@ export default {
     font-family: 'Nexa-Bold';
     font-style: normal;
     text-align: center;
+  }
+  a{
+    text-decoration: underline;
+    color: white;
   }
 }
 </style>

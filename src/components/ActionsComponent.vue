@@ -57,19 +57,16 @@ export default {
     font-family: 'Nexa-Bold';
     font-style: normal;
     line-height: 50px;
-    text-align: left;
     font-size: 2rem;
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 300px) {
       font-size: 2.3rem;
       padding-top: 0;
+      text-align: center;
     }
-    @media only screen and (min-width: 600px) {
-      font-size: 2.3rem;
-      // padding-top: 30%;
-    }
-    @media only screen and (min-width: 1264px) {
+    @media only screen and (min-width: 1024px) {
       font-size: 2.7rem;
       padding-top: 30%;
+      text-align: left;
     }
   }
     .fi-text {
