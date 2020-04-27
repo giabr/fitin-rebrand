@@ -85,7 +85,7 @@ export default {
       }
       @media only screen and (min-width: 1264px) {
         position: absolute;
-        top: 0;
+        top: 20%;
         bottom: 0;
         margin: 0 auto;
         width: 80%;
