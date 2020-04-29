@@ -23,15 +23,16 @@ export default {
   .fi-card{
    .fi-img{
      height: auto;
-     padding: 5%;
      display: block;
      margin-left: auto;
      margin-right: auto;
      @media only screen and (min-width: 300px) {
-      max-width: 260px;
+      width: 100%;
+      padding: 0;
      }
      @media only screen and (min-width: 600px) {
       max-width: 220px;
+      padding: 5%;
      }
      @media only screen and (min-width: 1264px) {
       max-width: 320px;
