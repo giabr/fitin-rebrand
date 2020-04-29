@@ -12,6 +12,7 @@
       <Support />
       <Members />
       <Contact />
+      <!-- <Subscribe /> -->
     </v-content>
     <base-footer></base-footer>
   </div>
@@ -29,6 +30,7 @@ import Products from '@/components/ProductsComponent.vue';
 // import Impact from '@/components/ImpactComponent.vue';
 import Support from '@/components/SupportComponent.vue';
 // import Blog from '@/components/BlogComponent.vue';
+// import Subscribe from '@/components/SubscribeComponent.vue';
 import Contact from '../components/ContactComponent.vue';
 
 export default {
@@ -44,6 +46,7 @@ export default {
     // Impact,
     Members,
     Support,
+    // Subscribe,
     // Blog,
     Contact,
   },

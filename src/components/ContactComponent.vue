@@ -67,12 +67,17 @@
         <v-btn class="mr-4" @click="submit">submit</v-btn>
         <v-btn @click="clear">clear</v-btn>
       </form>
+      <subscribe />
   </v-container>
 </template>
 
 <script>
-export default {
+import Subscribe from './SubscribeComponent.vue';
 
+export default {
+  components: {
+    Subscribe,
+  },
 };
 </script>
 
