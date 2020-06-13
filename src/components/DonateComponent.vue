@@ -33,7 +33,7 @@ export default {
 .fi-donation{
     padding: 8%;
     height: 700px;
-    background: url('../assets/donate-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/donate-bg.jpg');
     background-size: cover;
     background-position:center;
     h1 {
