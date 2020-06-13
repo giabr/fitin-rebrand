@@ -13,9 +13,9 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    "object-shorthand": ["error", "always"],
-    "object-shorthand": ["error", "always", { "avoidQuotes": true }],
-    "object-shorthand": ["error", "always", { "ignoreConstructors": true }]
+    'object-shorthand': ['error', 'always', { avoidQuotes: true, ignoreConstructors: true }],
+    'linebreak-style': 'off',
+    'max-len': 'off',
   },
   overrides: [
     {
