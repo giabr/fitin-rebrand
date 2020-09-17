@@ -60,10 +60,10 @@ export default {
     return {
       menus: [
         { title: 'Home', route: '/home' },
-        { title: 'Product', route: '/maintenance' },
-        { title: 'Donation', route: '/donation' },
-        { title: 'Blog', route: '/maintenance' },
-        { title: 'FAQ', route: '/maintenance' },
+        { title: 'Product', route: '/mt' },
+        { title: 'Donation', route: '/donate' },
+        { title: 'Blog', route: '/mt' },
+        { title: 'FAQ', route: '/mt' },
       ],
     };
   },

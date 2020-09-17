@@ -15,8 +15,9 @@
 
 <script>
 import VueSlickCarousel from 'vue-slick-carousel';
-import '../../node_modules/vue-slick-carousel/dist/vue-slick-carousel.css';
-import '../../node_modules/vue-slick-carousel/dist/vue-slick-carousel-theme.css';
+import 'vue-slick-carousel/dist/vue-slick-carousel.css';
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css';
 import Product from './ProductComponents/Product.vue';
 
 export default {
@@ -28,21 +29,28 @@ export default {
   data() {
     return {
       products: [
-        { id: 1, title: 'Pouch Serut Upcycle' },
-        { id: 2, title: 'Pouch Serut Upcycle' },
-        { id: 3, title: 'Pouch Serut Upcycle' },
-        { id: 4, title: 'Pouch Serut Upcycle' },
-        { id: 5, title: 'Pouch Serut Upcycle' },
-        { id: 6, title: 'Pouch Serut Upcycle' },
-        { id: 7, title: 'Pouch Serut Upcycle' },
-        { id: 8, title: 'Pouch Serut Upcycle' },
-        { id: 9, title: 'Pouch Serut Upcycle' },
-        { id: 10, title: 'Pouch Serut Upcycle' },
+        { id: 1, title: 'Simpo Bag' },
+        { id: 2, title: 'Simpo Bag' },
+        { id: 3, title: 'Simpo Bag' },
+        { id: 4, title: 'Simpo Bag' },
+        { id: 5, title: 'Simpo Bag' },
+        { id: 6, title: 'Simpo Bag' },
+        { id: 7, title: 'Simpo Bag' },
+        { id: 8, title: 'Simpo Bag' },
+        { id: 9, title: 'Simpo Bag' },
+        { id: 10, title: 'Simpo Bag' },
+        { id: 11, title: 'Simpo Bag' },
+        { id: 12, title: 'Simpo Bag' },
+        { id: 13, title: 'Oishi String-Bag' },
+        { id: 14, title: 'Oishi String-Bag' },
+        { id: 15, title: 'Oishi String-Bag' },
+        { id: 16, title: 'Oishi String-Bag' },
       ],
       settings: {
         dots: true,
         infinite: false,
         speed: 500,
+        accessibility: true,
         slidesToShow: 4,
         slidesToScroll: 4,
         initialSlide: 0,

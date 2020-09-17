@@ -64,8 +64,8 @@ export default {
   data() {
     return {
       actions: [
-        { icon: ['fas', 'donate'], text: 'Throw your wastes to make valuable things.', route: '/donation' },
-        { icon: ['fas', 'gifts'], text: 'Become a sustainable hero by using our product.', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
+        { icon: ['fas', 'donate'], text: 'Throw your wastes to make valuable things.', route: '/donate' },
+        { icon: ['fas', 'gifts'], text: 'Become a sustainable hero by using our product.', route: 'https://www.instagram.com/fitin_store.id/' },
         { icon: ['fab', 'instagram'], text: 'Follow & share our stories to make more people know.', route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
       ],
     };
