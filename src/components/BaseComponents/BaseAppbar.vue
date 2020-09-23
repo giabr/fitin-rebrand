@@ -25,7 +25,7 @@
     >
       <span class="menu-text">{{ menu.title }}</span>
     </v-btn>
-    <v-menu offset-y>
+    <v-menu offset-y v-if="$vuetify.breakpoint.xsOnly">
       <template v-slot:activator="{ on }">
         <v-btn
           target="_blank"

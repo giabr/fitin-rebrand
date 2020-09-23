@@ -36,11 +36,11 @@ export default {
 padding-top: 5%;
 font-family: 'Nexa-Bold';
 font-style: normal;
-font-size: 20px;
+font-size: 18px;
 text-align: center;
 }
 .fi-position{
 text-align: center;
-font-size: 20px;
+font-size: 12px;
 }
 </style>
