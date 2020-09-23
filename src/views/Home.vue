@@ -9,7 +9,7 @@
       <About />
       <Actions />
       <!-- <Impact /> -->
-      <Support />
+      <!-- <Support /> -->
       <Members />
       <Contact />
       <!-- <Subscribe /> -->
@@ -28,7 +28,7 @@ import Data from '@/components/DataComponent.vue';
 import Actions from '@/components/ActionsComponent.vue';
 import Products from '@/components/ProductsComponent.vue';
 // import Impact from '@/components/ImpactComponent.vue';
-import Support from '@/components/SupportComponent.vue';
+// import Support from '@/components/SupportComponent.vue';
 // import Blog from '@/components/BlogComponent.vue';
 // import Subscribe from '@/components/SubscribeComponent.vue';
 import Contact from '../components/ContactComponent.vue';
@@ -45,7 +45,7 @@ export default {
     Actions,
     // Impact,
     Members,
-    Support,
+    // Support,
     // Subscribe,
     // Blog,
     Contact,

@@ -5,19 +5,19 @@
     <v-row>
       <v-col cols="12" v-for="(member, index) in members_1" :key="index"
         xs="12"
-        sm="4"
+        sm="3"
         md="3"
         lg="3"
       >
         <member :member=member></member>
       </v-col>
     </v-row>
-    <v-row class="fi-team-2">
+    <v-row>
       <v-col cols="12" v-for="(member, index) in members_2" :key="index"
         xs="12"
-        sm="4"
-        md="4"
-        lg="4"
+        sm="3"
+        md="3"
+        lg="3"
       >
         <member :member=member></member>
       </v-col>
@@ -46,6 +46,7 @@ export default {
         { name: 'Alfin Syarifuddin S.', job: 'Public Relation & Branding Officer', img: 'alfin_branding.png' },
         { name: 'Yulia Hani K.', job: 'Branding & Graphic Designer', img: 'hani_designer.png' },
         { name: 'Saffanah Zakia R.', job: 'Innovation Product Officer', img: 'shafa_produksi.png' },
+        { name: 'Faishal Muhyiddin', job: 'Videographer & Photographer', img: 'faishal_videographer.png' },
       ],
     };
   },
@@ -66,17 +67,10 @@ export default {
     // padding: 8% 0;
     @media only screen and (min-width: 300px) {
       padding-top: 10%;
+      padding-bottom: 20%;
     }
     @media only screen and (min-width: 1264px) {
       padding: 8% 15%;
-    }
-  }
-  .fi-team-2{
-    @media only screen and (min-width: 300px) {
-      padding-bottom: 15%;
-    }
-    @media only screen and (min-width: 1264px) {
-      padding: 2% 10%;
     }
   }
   .fi-title {

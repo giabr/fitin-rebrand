@@ -3,19 +3,19 @@
     <div class="title-img">
       <h1 class="fi-title text-uppercase tertiary--text">Contact</h1>
     </div>
-    <div class="fi-form">
-      <iframe src="https://forms.gle/i5DQSjawRpn7YfiR8" width="580" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div class="fi-form-container">
+      <iframe id="fi-form" src="https://docs.google.com/forms/d/e/1FAIpQLScJMBU6zK5wUgAiAX1ARxDv_52QHe3ovQHNjTkS5ZfXSyj6YA/viewform?embedded=true" width=100% height="1000" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
     </div>
-    <subscribe />
+    <!-- <subscribe /> -->
   </v-container>
 </template>
 
 <script>
-import Subscribe from './SubscribeComponent.vue';
+// import Subscribe from './SubscribeComponent.vue';
 
 export default {
   components: {
-    Subscribe,
+    // Subscribe,
   },
 };
 </script>
@@ -53,13 +53,10 @@ export default {
       }
     }
    }
-   .fi-form{
-     margin: auto;
-     width: 100%;
-     @media only screen and (min-width: 600px) {
-        width: 50%;
-        max-width: 500px;
-      }
+   .fi-form-container{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
     .fi-text{
      text-align: center;
      font-size: 15px;
