@@ -21,7 +21,7 @@
         </div>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row class="fi-value">
       <v-col cols="12" md="3" sm="6">
         <img class="fi-img-bottom" src="../assets/about-info-1.png" alt="">
       </v-col>
@@ -51,6 +51,9 @@ export default {
   // .fi-desc{
   //   // padding-right: 5%;
   // }
+  .fi-value{
+    padding-top: 10%;
+  }
   .fi-img{
     padding-left: 5%;
     position: relative;
@@ -88,7 +91,7 @@ export default {
         top: 20%;
         bottom: 0;
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
       }
     }
   }

@@ -59,7 +59,8 @@ export default {
   background-size: 100% auto;
   background-position: bottom;
   background-repeat: no-repeat;
-  padding: 8%;
+  padding-bottom: 8%;
+  padding-top: 5%;
   @media only screen and (max-width: 600px) {
     padding: 20% 8%;
   }

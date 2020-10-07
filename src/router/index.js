@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Maintenance from '../views/404.vue';
 import Donation from '../views/Donate.vue';
+import Blog from '../views/Blog.vue';
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/mt',
     name: 'Maintenance',
     component: Maintenance,
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    component: Blog,
   },
   {
     path: '/donate',

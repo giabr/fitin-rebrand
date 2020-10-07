@@ -37,11 +37,11 @@ export default {
     padding: 30% 8%;
   }
     .fi-img-div{
-      padding-top: 8%;
+      padding-top: 10%;
       text-align: center;
       .fi-img {
         height: auto;
-        width: 100%;
+        width: 80%;
       }
       .fi-sub-title{
       padding-top: 5%;
@@ -58,6 +58,7 @@ export default {
     font-style: normal;
     line-height: 50px;
     font-size: 2rem;
+    text-transform: uppercase;
     @media only screen and (min-width: 300px) {
       font-size: 2.3rem;
       padding-top: 0;
