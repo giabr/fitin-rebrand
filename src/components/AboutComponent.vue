@@ -21,18 +21,18 @@
         </div>
       </v-col>
     </v-row>
-    <v-row class="fi-value">
+    <v-row class="fi-value text-uppercase">
       <v-col cols="12" md="3" sm="6">
-        <img class="fi-img-bottom" src="../assets/about-info-1.png" alt="">
+        <h2>Sustainable</h2>
       </v-col>
       <v-col cols="12" md="3" sm="6">
-        <img class="fi-img-bottom" src="../assets/about-info-2.png" alt="">
+        <h2>Empowering Disabilities</h2>
       </v-col>
       <v-col cols="12" md="3" sm="6">
-        <img class="fi-img-bottom" src="../assets/about-info-3.png" alt="">
+        <h2>Zero Waste Campaign</h2>
       </v-col>
       <v-col cols="12" md="3" sm="6">
-        <img class="fi-img-bottom" src="../assets/about-info-4.png" alt="">
+        <h3>Promoting Indonesian Cultural Heritage (Batik Ciprat)</h3>
       </v-col>
     </v-row>
   </v-container>
@@ -53,6 +53,8 @@ export default {
   // }
   .fi-value{
     padding-top: 10%;
+    text-align: center;
+    font-family: 'Nexa-Bold';
   }
   .fi-img{
     padding-left: 5%;
