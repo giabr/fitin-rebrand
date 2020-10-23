@@ -19,7 +19,7 @@ export default {
     return {
       stories: [
         {
-          id: 1, date: 'Sep 23', title: 'Lorem ipsum dolor sit amet', caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget dolor condimentum, mollis erat a, egestas orci. Vestibulum quis semper nisl. In malesuada sed augue sed congue.',
+          id: 1, date: 'Sep 23', title: 'Cerita sebuah masker', caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget dolor condimentum, mollis erat a, egestas orci. Vestibulum quis semper nisl. In malesuada sed augue sed congue.',
         },
         {
           id: 2, date: 'Des 23', title: 'Lorem ipsum dolor sit amet', caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget dolor condimentum, mollis erat a, egestas orci. Vestibulum quis semper nisl. In malesuada sed augue sed congue.',

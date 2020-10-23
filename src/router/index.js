@@ -4,6 +4,8 @@ import Home from '../views/Home.vue';
 import Maintenance from '../views/404.vue';
 import Donation from '../views/Donate.vue';
 import Blog from '../views/Blog.vue';
+// Story
+import MaskerStory from '../components/BlogComponents/Story/MaskerStory.vue';
 
 Vue.use(VueRouter);
 
@@ -32,6 +34,11 @@ const routes = [
     path: '/donate',
     name: 'Donation',
     component: Donation,
+  },
+  {
+    path: '/blog/masker-story',
+    name: 'MaskerStory',
+    component: MaskerStory,
   },
   // {
   //   path: '/about',
