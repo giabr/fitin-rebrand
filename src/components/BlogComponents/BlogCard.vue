@@ -55,6 +55,7 @@ export default {
     @media only screen and (max-width: 960px) {
       font-size: 1.2em;
       padding-top: 0;
+      padding-bottom: 0;
     }
     @media only screen and (min-width: 960px) {
       font-size: 1.5em;

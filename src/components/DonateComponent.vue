@@ -38,6 +38,9 @@ export default {
     background-position:center;
     h1 {
       color: #FFF;
+      @media only screen and (max-width: 960px) {
+        font-size: 18px;
+      }
     }
 }
 </style>
