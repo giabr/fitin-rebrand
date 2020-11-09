@@ -3,6 +3,7 @@
     <base-appbar></base-appbar>
     <v-content>
       <Hero />
+      <Video />
       <Products />
       <!-- <Blog /> -->
       <Data />
@@ -22,6 +23,7 @@
 import BaseAppbar from '@/components/BaseComponents/BaseAppbar.vue';
 import BaseFooter from '@/components/BaseComponents/BaseFooter.vue';
 import Hero from '@/components/HeroComponent.vue';
+import Video from '@/components/VideoComponent.vue';
 import About from '@/components/AboutComponent.vue';
 import Members from '@/components/MembersComponent.vue';
 import Data from '@/components/DataComponent.vue';
@@ -39,6 +41,7 @@ export default {
     BaseAppbar,
     BaseFooter,
     Hero,
+    Video,
     Products,
     Data,
     About,

@@ -4,15 +4,14 @@
     elevation="0"
   >
     <v-row>
-      <v-col cols="3">
+      <v-col cols="12" xs="12" sm="12" md="3" lg="3">
         <v-img
           class="white--text fi-img align-end"
-          height="170px"
           :src="require(`../../assets/blogs/${blog.id}.jpg`)"
         >
         </v-img>
       </v-col>
-      <v-col cols="5">
+      <v-col cols="12" xs="12" sm="12" md="9" lg="9">
         <v-card-title class="fi-title tertiary--text">{{blog.title}}</v-card-title>
         <v-card-text class="text--primary fi-text-container">
           <p class="fi-text">{{blog.date}}</p>
@@ -39,16 +38,25 @@ export default {
     width: 100%;
   }
   .fi-img{
-    width: 300px;
+    @media only screen and (max-width: 960px) {
+      width: 100%;
+      height: 230px;
+    }
+    @media only screen and (min-width: 960px) {
+      width: 300px;
+      height: 170px;
+    }
+
   }
   .fi-title{
     font-family: 'Nexa';
     text-align: justify;
-    line-height: 20px;
-    @media only screen and (min-width: 300px) {
+    line-height: 30px;
+    @media only screen and (max-width: 960px) {
       font-size: 1.2em;
+      padding-top: 0;
     }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 960px) {
       font-size: 1.5em;
     }
   }

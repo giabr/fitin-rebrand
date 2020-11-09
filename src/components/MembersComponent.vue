@@ -60,10 +60,6 @@ export default {
   background-position: bottom;
   background-repeat: no-repeat;
   padding-bottom: 8%;
-  padding-top: 5%;
-  @media only screen and (max-width: 600px) {
-    padding: 20% 8%;
-  }
   .fi-team{
     // padding: 8% 0;
     @media only screen and (min-width: 300px) {
@@ -79,11 +75,10 @@ export default {
     font-style: normal;
     line-height: 50px;
     text-align: center;
-    font-size: 2rem;
-    @media only screen and (min-width: 600px) {
-      font-size: 2.3rem;
+    @media only screen and (max-width: 960px) {
+      font-size: 1.5rem;
     }
-    @media only screen and (min-width: 1264px) {
+    @media only screen and (min-width: 960px) {
       font-size: 2.7rem;
     }
   }

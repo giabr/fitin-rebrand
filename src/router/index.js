@@ -5,7 +5,7 @@ import Maintenance from '../views/404.vue';
 import Donation from '../views/Donate.vue';
 import Blog from '../views/Blog.vue';
 // Story
-import MaskerStory from '../components/BlogComponents/Story/MaskerStory.vue';
+import KaryaDisabilitas from '../components/BlogComponents/Story/KaryaDisabilitas.vue';
 
 Vue.use(VueRouter);
 
@@ -26,8 +26,8 @@ const routes = [
     component: Maintenance,
   },
   {
-    path: '/blog',
-    name: 'Blog',
+    path: '/story',
+    name: 'Story',
     component: Blog,
   },
   {
@@ -36,9 +36,9 @@ const routes = [
     component: Donation,
   },
   {
-    path: '/blog/masker-story',
-    name: 'MaskerStory',
-    component: MaskerStory,
+    path: '/story/karya-disabilitas',
+    name: 'KaryaDisabilitas',
+    component: KaryaDisabilitas,
   },
   // {
   //   path: '/about',

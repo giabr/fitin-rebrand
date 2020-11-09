@@ -41,45 +41,52 @@ export default {
       text-align: center;
       .fi-img {
         height: auto;
-        width: 80%;
+        width: 60%;
       }
       .fi-sub-title{
-      padding-top: 5%;
-      font-family: 'Nexa-Bold';
-      font-style: normal;
-      font-size: 30px;
+        padding-top: 5%;
+        font-family: 'Nexa-Bold';
+        font-style: normal;
+        @media only screen and (max-width: 960px) {
+          font-size: 16px;
+        }
+        @media only screen and (min-width: 960px) {
+          font-size: 24px;
+        }
       }
       .fi-position{
-      font-size: 30px;
+        font-size: 18px;
       }
     }
     .fi-title {
     font-family: 'Nexa-Bold';
     font-style: normal;
-    line-height: 50px;
-    font-size: 2rem;
     text-transform: uppercase;
-    @media only screen and (min-width: 300px) {
-      font-size: 2.3rem;
+    @media only screen and (max-width: 960px) {
+      font-size: 1rem;
       padding-top: 0;
       text-align: center;
     }
-    @media only screen and (min-width: 1024px) {
-      font-size: 2.7rem;
+    @media only screen and (min-width: 960px) {
+      font-size: 2rem;
       padding-top: 30%;
       text-align: left;
     }
   }
     .fi-text {
-    font-family: Rubik;
-    margin-top: 15px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    text-align: justify;
-    @media only screen and (max-width: 600px) {
-      font-size: 16px;
-    }
+      font-family: Rubik;
+      margin-top: 15px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      text-align: justify;
+      text-align: justify;
+      @media only screen and (max-width: 960px) {
+        font-size: 12px;
+      }
+      @media only screen and (min-width: 960px) {
+        font-size: 16px;
+      }
   }
 }
 </style>

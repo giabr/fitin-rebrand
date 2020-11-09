@@ -1,7 +1,6 @@
 <template>
   <v-container fluid class="fi-about primary">
-    <v-row>
-      <v-col cols="12" lg="6" order="2" order-lg="1" class="fi-desc">
+      <div class="fi-desc">
         <h1 class="fi-title text-uppercase tertiary--text">What is Fitin?</h1>
         <p class="fi-text white--text">
           Fitin is a startup engaged in developing products and services to process textile/garment
@@ -14,25 +13,20 @@
           to process it, and actively participating in ECO-friendly communities to campaign for
           the use and use of fabrics.
         </p>
-      </v-col>
-      <v-col cols="12" lg="6" order="1" order-lg="2">
-        <div class="fi-img">
-        <img src="../assets/about-img.png" alt="">
-        </div>
-      </v-col>
-    </v-row>
+        <img class="fi-img" src="../assets/about-img.png" alt="">
+      </div>
     <v-row class="fi-value text-uppercase">
-      <v-col cols="12" md="3" sm="6">
-        <h2>Sustainable</h2>
+      <v-col cols="6">
+        <h2 class="fi-value-title">Sustainable</h2>
       </v-col>
-      <v-col cols="12" md="3" sm="6">
-        <h2>Empowering Disabilities</h2>
+      <v-col cols="6">
+        <h2 class="fi-value-title">Zero Waste</h2>
       </v-col>
-      <v-col cols="12" md="3" sm="6">
-        <h2>Zero Waste Campaign</h2>
+      <v-col cols="6">
+        <h2 class="fi-value-title">Empowering Disabilities</h2>
       </v-col>
-      <v-col cols="12" md="3" sm="6">
-        <h3>Promoting Indonesian Cultural Heritage (Batik Ciprat)</h3>
+      <v-col cols="6">
+        <h2 class="fi-value-title">Cultural Heritage</h2>
       </v-col>
     </v-row>
   </v-container>
@@ -48,67 +42,51 @@ export default {
 <style lang="scss" scoped>
 .fi-about {
   padding: 8%;
-  // .fi-desc{
-  //   // padding-right: 5%;
-  // }
   .fi-value{
-    padding-top: 10%;
     text-align: center;
     font-family: 'Nexa-Bold';
+    @media only screen and (max-width: 960px) {
+      padding-top: 8%;;
+    }
+    @media only screen and (min-width: 960px) {
+      padding-top: 5%;
+      padding-right: 15%;
+      padding-left: 15%;
+    }
+    .fi-value-title{
+      @media only screen and (max-width: 960px) {
+        font-size: 12px;
+      }
+      @media only screen and (min-width: 960px) {
+        font-size: 24px;
+      }
+    }
   }
   .fi-img{
-    padding-left: 5%;
-    position: relative;
-    height: 200px;
-    @media only screen and (min-width: 600px) {
-      height: 400px;
-      padding-left: 5%;
-      position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @media only screen and (max-width: 960px) {
+      margin-top: 15%;
+      width: 70%;
     }
-    @media only screen and (min-width: 1024px) {
-      height: 600px;
-      padding-left: 5%;
-      position: relative;
-    }
-    @media only screen and (min-width: 1264px) {
-      height: 600px;
-      padding-left: 5%;
-      position: relative;
-    }
-    img {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: 0 auto;
-      width: 100%;
-      @media only screen and (min-width: 600px) {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: 0 auto;
-        width: 100%;
-      }
-      @media only screen and (min-width: 1264px) {
-        position: absolute;
-        top: 20%;
-        bottom: 0;
-        margin: 0 auto;
-        width: 100%;
-      }
+    @media only screen and (min-width: 960px) {
+      margin-top: 5%;
+      height: 300px;
+      width: auto;
     }
   }
   .fi-title {
     font-family: 'Nexa-Bold';
     font-style: normal;
-    line-height: 100px;
     text-align: center;
-    font-size: 2rem;
-    @media only screen and (min-width: 600px) {
-      font-size: 2.3rem;
+    @media only screen and (max-width: 960px) {
+      font-size: 1.5rem;
+      padding-top: 8%;
     }
-    @media only screen and (min-width: 1264px) {
-      text-align: right;
+    @media only screen and (min-width: 960px) {
       font-size: 2.7rem;
+      line-height: 100px;
     }
   }
   .fi-text {
@@ -116,15 +94,15 @@ export default {
     margin-top: 15px;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
     text-align: justify;
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 960px) {
+      padding: 0;
+      font-size: 12px;
+    }
+    @media only screen and (min-width: 960px) {
+      padding: 0 15%;
       font-size: 16px;
     }
-  }
-  .fi-img{
-    padding-top: 10%;
-    width: 95%;
   }
   .fi-img-bottom{
     display: block;

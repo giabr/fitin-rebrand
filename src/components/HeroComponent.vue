@@ -2,7 +2,7 @@
   <v-container fluid class="fi-hero black">
     <v-row>
       <v-col cols="12" md="6">
-        <iframe class="intro-video" src="https://www.youtube.com/embed/rjf2_wWqfEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe class="intro-video" src="https://www.youtube.com/embed/rjf2_wWqfEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       </v-col>
       <v-col cols="12" md="6">
         <div class="text-uppercase white--text intro-title">
@@ -24,90 +24,45 @@ export default {
 
 <style lang="scss" scoped>
 .fi-hero {
-  height: 700px;
   background: url('../assets/intro-bg.jpg');
   background-size: cover;
   background-position:center;
   position: relative;
   padding: 0 8%;
-  .intro-video{
-    border-radius: 25px;
-    margin-top: 80px;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    @media only screen and (min-width: 600px) {
-      border-radius: 25px;
-      margin: 0;
-      width: 40%;
-      height: 55%;
-      position: absolute;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
-    @media only screen and (min-width: 1264px) {
-      border-radius: 25px;
-      margin: 0;
-      width: 40%;
-      height: 55%;
-      position: absolute;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
+  @media only screen and (max-width: 960px) {
+    height: 300px;
+  }
+  @media only screen and (min-width: 960px) {
+    height: 700px;
   }
   .intro-title{
-    margin: 0;
     position: absolute;
-    padding-left: 2%;
-    top: 60%;
-    -ms-transform: translateY(-65%);
-    transform: translateY(-40%);
-    @media only screen and (min-width: 600px) {
-      margin: 0;
-      right: 2%;
-      padding-left: 2%;
-      top: 45%;
-      -ms-transform: translateY(-65%);
-      transform: translateY(-40%);
-    }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (max-width: 960px) {
       margin: 0;
       right: 5%;
       padding-left: 2%;
       top: 45%;
-      -ms-transform: translateY(-65%);
-      transform: translateY(-40%);
+      text-align: right;
     }
-    @media only screen and (min-width: 1264px) {
+    @media only screen and (min-width: 960px) {
       margin: 0;
-      position: absolute;
-      right: 10%;
+      right: 5%;
       padding-left: 2%;
-      top: 35%;
-      -ms-transform: translateY(-65%);
-      transform: translateY(-40%);
+      top: 45%;
     }
   }
   .fi-title {
     font-family: 'Nexa-Bold';
     font-style: normal;
-    line-height: 50px;
-    font-size: 1.4rem;
-    @media only screen and (min-width: 600px) {
+    @media only screen and (max-width: 960px) {
+      margin-left: auto;
+      line-height: 50px;
+      font-size: 1.5rem;
+    }
+    @media only screen and (min-width: 960px) {
       margin-left: auto;
       line-height: 70px;
-      font-size: 1.8rem;
-    }
-    @media only screen and (min-width: 780px) {
-      margin-left: auto;
-      line-height: 70px;
-      font-size: 2.1rem;
-    }
-    @media only screen and (min-width: 1264px) {
-      line-height: 100px;
-      font-size: 2.7rem;
+      font-size: 2.5rem;
     }
   }
 }

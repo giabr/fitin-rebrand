@@ -60,7 +60,7 @@ export default {
     return {
       menus: [
         { title: 'Home', route: '/home' },
-        { title: 'Story', route: '/mt' },
+        { title: 'Story', route: '/story' },
         { title: 'Product', route: '/mt' },
         { title: 'Donation', route: '/donate' },
         { title: 'FAQ', route: '/mt' },

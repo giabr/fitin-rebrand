@@ -38,21 +38,18 @@ export default {
       max-width: 320px;
      }
    }
-   .fi-title{
-      font-family: 'Nexa-Bold';
-      font-style: normal;
-      font-weight: bold;
-      text-align: center;
+  .fi-title {
+    font-family: 'Nexa-Bold';
+    font-style: normal;
+    @media only screen and (max-width: 960px) {
+      padding-top: 5%;
       font-size: 1rem;
-      @media only screen and (max-width: 600px) {
-        font-size: 1.3rem;
-      }
-      @media only screen and (min-width: 1000px) {
-        font-size: 1.5rem;
-      }
-      @media only screen and (min-width: 1264px) {
-        font-size: 1.5rem;
-      }
-   }
+      text-align: center;
+    }
+    @media only screen and (min-width: 960px) {
+      font-size: 1.7rem;
+      text-align: center;
+    }
+  }
   }
 </style>

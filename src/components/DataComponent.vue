@@ -104,10 +104,7 @@ export default {
 
 <style lang="scss" scoped>
 .fi-data {
-  background: url('../assets/data-bg.jpg');
-  background-size: 100% auto;
-  background-position: 100% 101%;
-  background-repeat: no-repeat;
+  background: white;
   padding: 8%;
   padding-bottom: 15%;
   .fi-graph{
@@ -116,13 +113,12 @@ export default {
   .fi-title {
     font-family: 'Nexa-Bold';
     font-style: normal;
-    font-size: 2rem;
-    @media only screen and (min-width: 300px) {
-      font-size: 1.5rem;
+    @media only screen and (max-width: 960px) {
+      font-size: 1rem;
       text-align: center;
     }
-    @media only screen and (min-width: 1024px) {
-      font-size: 2.7rem;
+    @media only screen and (min-width: 960px) {
+      font-size: 2.5rem;
       text-align: left;
     }
   }
@@ -130,10 +126,10 @@ export default {
     font-family: Rubik;
     font-style: normal;
     font-weight: bold;
-    @media only screen and (min-width: 300px) {
-      font-size: 2.5rem;
+    @media only screen and (max-width: 960px) {
+      font-size: 1.5rem;
     }
-    @media only screen and (min-width: 1264px) {
+    @media only screen and (min-width: 960px) {
       font-size: 2.7rem;
     }
   }
@@ -143,12 +139,19 @@ export default {
   }
   .fi-text{
     text-align: justify;
+    color: grey;
+    @media only screen and (max-width: 960px) {
+      font-size: 12px;
+    }
+    @media only screen and (min-width: 960px) {
+      font-size: 16px;
+    }
   }
   .fi-img{
     width: 100%;
     height: auto;
   }
-  @media only screen and (min-width: 300px) {
+  @media only screen and (max-width: 960px) {
     #content-desktop{
       display: none;
     }
@@ -159,7 +162,7 @@ export default {
       width: 70%;
     }
   }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 960px) {
     #content-mobile{
       display: none;
     }

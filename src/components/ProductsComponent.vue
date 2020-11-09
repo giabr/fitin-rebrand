@@ -47,7 +47,7 @@ export default {
         { id: 16, title: 'Oishi String-Bag' },
       ],
       settings: {
-        dots: true,
+        dots: false,
         infinite: false,
         speed: 500,
         accessibility: true,
@@ -89,33 +89,18 @@ export default {
 <style lang="scss" scoped>
   .fi-products{
    padding: 8%;
-   padding-bottom: 0;
-   @media only screen and (max-width: 600px) {
-    padding-bottom: 15%;
-   }
    .title-img{
      padding-bottom: 40px;
     .fi-title {
-      height: 200px;
-      background: url('../assets/product-img-title.png');
-      background-repeat: no-repeat;
       font-family: 'Nexa-Bold';
       font-style: normal;
-      text-align: center;
-      text-align: center;
-      padding-top: 120px;
-      font-size: 2rem;
-      @media only screen and (min-width: 300px) {
-        font-size: 2.3rem;
-        background-size: auto 60%;
-        background-position: 0%;
-        line-height: 60px;
+      @media only screen and (max-width: 960px) {
+        font-size: 1.2rem;
+        text-align: center;
       }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 960px) {
         font-size: 2.7rem;
-        background-size: auto 90%;
-        background-position: 33%;
-        line-height: 100px;
+        text-align: center;
       }
     }
    }
