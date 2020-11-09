@@ -4,8 +4,6 @@
     color="white"
     dark
     flat
-    :elevate-on-scroll="true"
-    :elevation=0
     class="menu"
   >
     <v-toolbar-title class="primary--text">

@@ -1,25 +1,26 @@
 <template>
   <div class="fi-blog-card">
-  <v-card class="fi-card-style"
-    elevation="0"
-  >
-    <v-row>
+    <v-row no-gutters>
       <v-col cols="12" xs="12" sm="12" md="3" lg="3">
+        <router-link :to="blog.route">
         <v-img
           class="white--text fi-img align-end"
-          :src="require(`../../assets/blogs/${blog.id}.jpg`)"
+          :src="blog.url"
         >
         </v-img>
+        </router-link>
       </v-col>
       <v-col cols="12" xs="12" sm="12" md="9" lg="9">
-        <v-card-title class="fi-title tertiary--text">{{blog.title}}</v-card-title>
-        <v-card-text class="text--primary fi-text-container">
-          <p class="fi-text">{{blog.date}}</p>
+        <router-link :to="blog.route">
+          <h1 class="fi-title tertiary--text">{{blog.title}}</h1>
+        </router-link>
+        <div class="text--primary fi-text-container">
+          <!-- <p class="fi-text">{{blog.date}}</p> -->
           <p class="fi-text">{{blog.caption}}</p>
-        </v-card-text>
+          <router-link :to="blog.route"><p class="fi-link">Read more</p></router-link>
+        </div>
       </v-col>
     </v-row>
-  </v-card>
   </div>
 </template>
 
@@ -34,8 +35,13 @@ export default {
 <style lang="scss" scoped>
 .fi-blog-card{
   width: 100%;
-  .fi-card-style{
-    width: 100%;
+  padding-bottom: 5%;
+  a{
+    text-decoration: none;
+  }
+  .fi-link{
+    text-align: right;
+    font-family: 'Nexa';
   }
   .fi-img{
     @media only screen and (max-width: 960px) {
@@ -44,7 +50,8 @@ export default {
     }
     @media only screen and (min-width: 960px) {
       width: 300px;
-      height: 170px;
+      height: 150px;
+      border-radius: 15px;
     }
 
   }
@@ -54,8 +61,8 @@ export default {
     line-height: 30px;
     @media only screen and (max-width: 960px) {
       font-size: 1.2em;
-      padding-top: 0;
-      padding-bottom: 0;
+      padding: 5%;
+      text-align: center;
     }
     @media only screen and (min-width: 960px) {
       font-size: 1.5em;
@@ -63,7 +70,15 @@ export default {
   }
   .fi-text-container{
     // height: 130px;
-    padding-right: 5%;
+    @media only screen and (max-width: 960px) {
+      padding: 0 5%;
+      padding-bottom: 20%;
+      width: 100%;
+    }
+    @media only screen and (min-width: 960px) {
+      padding-top: 2%;
+      padding-right: 20%;
+    }
   }
   .fi-text {
     font-style: normal;

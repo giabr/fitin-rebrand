@@ -42,7 +42,6 @@ export default {
       right: 5%;
       padding-left: 2%;
       top: 45%;
-      text-align: right;
     }
     @media only screen and (min-width: 960px) {
       margin: 0;

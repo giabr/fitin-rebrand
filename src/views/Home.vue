@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <base-appbar></base-appbar>
-    <v-content>
+    <v-main>
       <Hero />
       <Video />
       <Products />
@@ -14,7 +14,7 @@
       <Members />
       <Contact />
       <!-- <Subscribe /> -->
-    </v-content>
+    </v-main>
     <base-footer></base-footer>
   </div>
 </template>

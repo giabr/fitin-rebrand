@@ -5,7 +5,7 @@ import Maintenance from '../views/404.vue';
 import Donation from '../views/Donate.vue';
 import Blog from '../views/Blog.vue';
 // Story
-import KaryaDisabilitas from '../components/BlogComponents/Story/KaryaDisabilitas.vue';
+import KaryaDisabilitas from '../views/Story/KaryaDisabilitas.vue';
 
 Vue.use(VueRouter);
 
