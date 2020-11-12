@@ -2,7 +2,7 @@
   <div class="fi-cover">
     <v-parallax
         height="750"
-        :src=story.img
+        :src=data.cover
     >
         <v-row
         align="center"
@@ -12,8 +12,8 @@
             class="text-center"
             cols="12"
         >
-            <h1 class="fi-title white--text">{{story.title}}</h1>
-            <p>It serves as the main media of our Story, Creativity and Passion.</p>
+            <h1 class="fi-title white--text">{{data.title}}</h1>
+            <!-- <p>It serves as the main media of our Story, Creativity and Passion.</p> -->
         </v-col>
         </v-row>
     </v-parallax>
@@ -23,17 +23,18 @@
 <script>
 export default {
   props: {
-    story: Object,
+    data: Object,
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .fi-cover{
-    padding-top: 2%;
+    padding-top: 3%;
     .fi-title {
-        font-family: 'Nexa';
+        font-family: 'Nexa-Bold';
         font-style: normal;
+        text-shadow:0px 2px 30px #000000;
         @media only screen and (max-width: 960px) {
             font-size: 2rem;
             text-align: center;

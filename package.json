@@ -18,6 +18,7 @@
     "@typeform/embed": "^0.16.0",
     "core-js": "^3.6.4",
     "countup.js": "^2.0.4",
+    "firebase": "^8.0.1",
     "jquery": "^3.5.1",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.11",

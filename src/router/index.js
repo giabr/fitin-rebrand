@@ -4,8 +4,7 @@ import Home from '../views/Home.vue';
 import Maintenance from '../views/404.vue';
 import Donation from '../views/Donate.vue';
 import Blog from '../views/Blog.vue';
-// Story
-import KaryaDisabilitas from '../views/Story/KaryaDisabilitas.vue';
+import StoryPage from '../views/StoryPage.vue';
 
 Vue.use(VueRouter);
 
@@ -36,9 +35,10 @@ const routes = [
     component: Donation,
   },
   {
-    path: '/story/karya-disabilitas',
-    name: 'KaryaDisabilitas',
-    component: KaryaDisabilitas,
+    path: '/story/:path',
+    name: 'StoryPage',
+    component: StoryPage,
+    props: true,
   },
   // {
   //   path: '/about',

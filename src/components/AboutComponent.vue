@@ -94,13 +94,15 @@ export default {
     margin-top: 15px;
     font-style: normal;
     font-weight: normal;
-    text-align: justify;
+    text-align: center;
     @media only screen and (max-width: 960px) {
       padding: 0;
+      line-height: 25px;
       font-size: 12px;
     }
     @media only screen and (min-width: 960px) {
       padding: 0 15%;
+      line-height: 30px;
       font-size: 16px;
     }
   }

@@ -2,22 +2,22 @@
   <div class="fi-blog-card">
     <v-row no-gutters>
       <v-col cols="12" xs="12" sm="12" md="3" lg="3">
-        <router-link :to="blog.route">
+        <router-link :to="{path: '/story/' + blog.path}">
         <v-img
           class="white--text fi-img align-end"
-          :src="blog.url"
+          :src="blog.thumbnail"
         >
         </v-img>
         </router-link>
       </v-col>
       <v-col cols="12" xs="12" sm="12" md="9" lg="9">
-        <router-link :to="blog.route">
+        <router-link :to="{path: '/story/' + blog.path}">
           <h1 class="fi-title tertiary--text">{{blog.title}}</h1>
         </router-link>
         <div class="text--primary fi-text-container">
           <!-- <p class="fi-text">{{blog.date}}</p> -->
           <p class="fi-text">{{blog.caption}}</p>
-          <router-link :to="blog.route"><p class="fi-link">Read more</p></router-link>
+          <router-link :to="{path: '/story/' + blog.path}"><p class="fi-link">Read more</p></router-link>
         </div>
       </v-col>
     </v-row>

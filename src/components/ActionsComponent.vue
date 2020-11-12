@@ -32,7 +32,7 @@ export default {
   background-size: 100% auto;
   background-position: top;
   background-repeat: no-repeat;
-  padding: 20% 8%;
+  padding: 15% 8%;
     .fi-img-div{
       padding-top: 10%;
       text-align: center;
