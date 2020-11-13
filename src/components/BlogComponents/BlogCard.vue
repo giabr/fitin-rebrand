@@ -44,12 +44,11 @@ export default {
     font-family: 'Nexa';
   }
   .fi-img{
+    width: 100%;
     @media only screen and (max-width: 960px) {
-      width: 100%;
       height: 230px;
     }
     @media only screen and (min-width: 960px) {
-      width: 300px;
       height: 150px;
       border-radius: 15px;
     }
@@ -66,6 +65,7 @@ export default {
     }
     @media only screen and (min-width: 960px) {
       font-size: 1.5em;
+      padding-left: 5%;
     }
   }
   .fi-text-container{
@@ -77,7 +77,8 @@ export default {
     }
     @media only screen and (min-width: 960px) {
       padding-top: 2%;
-      padding-right: 20%;
+      padding-right: 30%;
+      padding-left: 5% ;
     }
   }
   .fi-text {

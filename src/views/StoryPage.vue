@@ -7,8 +7,8 @@
               <h3 class="fi-sub-title">{{data.title}}</h3>
               <div v-for="(paragraph, id) in paragraphs" :key="id">
                 <div v-for="(detail,id) in paragraph" :key="id">
-                <p class="fi-text">{{detail.text}}</p>
-                <v-img class="fi-img" :src=detail.img />
+                <p v-if="detail.text" class="fi-text">{{detail.text}}</p>
+                <v-img v-if="detail.img" class="fi-img" :src=detail.img />
                 </div>
               </div>
               <div>
