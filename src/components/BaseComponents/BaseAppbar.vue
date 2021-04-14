@@ -7,10 +7,12 @@
     class="menu"
   >
     <v-toolbar-title class="primary--text">
+      <router-link to="/home">
       <img class="fi-logo" src="../../assets/logo.png" alt="" srcset="">
       <p class="font-weight-medium fi-logo-1">
         fit<span class="font-weight-light fi-logo-2">in</span>
       </p>
+      </router-link>
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-btn
@@ -57,11 +59,11 @@ export default {
   data() {
     return {
       menus: [
-        { title: 'Home', route: '/home' },
-        { title: 'Story', route: '/story' },
-        { title: 'Product', route: '/mt' },
-        { title: 'Donation', route: '/donate' },
-        { title: 'FAQ', route: '/mt' },
+        // { title: 'Home', route: '/home' },
+        // { title: 'Story', route: '/mt' },
+        // { title: 'Product', route: '/mt' },
+        // { title: 'Donation', route: '/donate' },
+        // { title: 'FAQ', route: '/mt' },
       ],
     };
   },

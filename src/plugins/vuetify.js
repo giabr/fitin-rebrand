@@ -8,6 +8,7 @@ import {
   faBars,
   faDonate,
   faGifts,
+  faHeart,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faInstagram,
@@ -27,6 +28,7 @@ library.add(
   faFacebook,
   faDonate,
   faGifts,
+  faHeart,
 );
 
 Vue.use(Vuetify);
@@ -35,9 +37,10 @@ export default new Vuetify({
   theme: {
     themes: {
       light: {
-        primary: '#5AC8D8',
-        secondary: '#DDDFE2',
-        tertiary: '#044852',
+        primary: '#044851',
+        secondary: '#628D93',
+        tertiary: '#96BBC1',
+        quaternary: '#B7D4DA',
         accent: '#4977AF',
         background: '#EDEEF0',
       },

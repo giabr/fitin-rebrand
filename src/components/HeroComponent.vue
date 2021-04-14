@@ -8,7 +8,7 @@
         <div class="text-uppercase white--text intro-title">
           <div class="fi-title">
             <h1 class="tertiary--text">little <span class="right white--text">act,</span></h1>
-            <h1 class="tertiary--text"><span class="right white--text">big </span>impact.</h1>
+            <h1 class="primary--text"><span class="right white--text">big </span>impact.</h1>
         </div>
         </div>
       </v-col>

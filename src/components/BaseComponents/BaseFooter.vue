@@ -6,7 +6,7 @@
   >
     <v-row>
       <v-col cols="6" md="4">
-        <img src="../../assets/logo-white.png" alt="" srcset="" class="desktop">
+        <img src="../../assets/logo-2.png" alt="" srcset="" class="desktop">
       </v-col>
       <v-col cols="12" style="letter-spacing:0.1em; text-transform: uppercase"
       class="mobile">
@@ -26,18 +26,13 @@
       </v-col>
       <v-col cols="12" md="4" style="letter-spacing:0.1em">
         <p class="fi-title">Get in touch</p>
-        <font-awesome-icon
-        class="white--text text--darken-1 fi-social"
-        style="margin: 0;"
-        :icon="['fa','phone-square-alt']"
-        ></font-awesome-icon><span class="fi-phone">0861526135163</span>
         <br>
         <font-awesome-icon
         class="white--text text--darken-1 fi-social"
         style="margin: 0;"
         :icon="['fa','phone-square-alt']"
-        ></font-awesome-icon><span class="fi-phone">0872816126557</span>
-        <p style="margin-top:20px">Jalan Jogja km,
+        ></font-awesome-icon><span class="fi-phone">0881023587673</span>
+        <p style="margin-top:20px">Pogung Dalangan no 4A,
           Sinduadi, Mlati, Sleman
           Daerah Istimewa Yogyakarta,
           Indonesia
@@ -66,15 +61,15 @@ export default {
   data() {
     return {
       menus: [
-        { title: 'Home', route: '/home' },
-        { title: 'Story', route: '/story' },
-        { title: 'Product', route: '/mt' },
-        { title: 'Donation', route: '/donate' },
-        { title: 'FAQ', route: '/mt' },
-        { title: 'Privacy Policy', route: '/mt' },
+        // { title: 'Home', route: '/home' },
+        // { title: 'Story', route: '/mt' },
+        // { title: 'Product', route: '/mt' },
+        // { title: 'Donation', route: '/donate' },
+        // { title: 'FAQ', route: '/mt' },
+        // { title: 'Privacy Policy', route: '/mt' },
       ],
       socials: [
-        { icon: ['fab', 'instagram'], route: 'https://www.instagram.com/fashion.fitin/?hl=id' },
+        { icon: ['fab', 'instagram'], route: 'https://www.instagram.com/fitin.official/?hl=id' },
         { icon: ['fab', 'linkedin'], route: 'https://www.linkedin.com/company/fitin-indonesia/' },
         { icon: ['fab', 'twitter'], route: 'https://twitter.com/fitin_id' },
         { icon: ['fab', 'facebook'], route: 'https://web.facebook.com/fashion.fitin/' },

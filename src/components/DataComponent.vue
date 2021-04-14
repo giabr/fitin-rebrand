@@ -3,14 +3,14 @@
     <v-row>
     <v-col id="content-mobile">
       <h1 class="fi-title text-uppercase tertiary--text">
-        BORN FROM FASHION WASTE AND DISABILITIES MASTERPIECE</h1>
+        WHY WE SHOULD ?</h1>
     </v-col>
     <v-col cols="12" md="5" class="fi-graph">
       <img class="fi-img" src="../assets/data-img.png" alt="">
     </v-col>
     <v-col cols="12" md="7">
       <h1 class="fi-title text-uppercase tertiary--text" id="content-desktop">
-        BORN FROM FASHION WASTE AND DISABILITIES MASTERPIECE</h1>
+        WHY WE SHOULD ?</h1>
       <v-row>
       <v-col cols="12" sm="12" md="6">
         <span class="fi-sub-title accent--text">

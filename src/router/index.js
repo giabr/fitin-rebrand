@@ -2,9 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Maintenance from '../views/404.vue';
-import Donation from '../views/Donate.vue';
-import Blog from '../views/Blog.vue';
-import StoryPage from '../views/StoryPage.vue';
+import Nota from '../views/Nota.vue';
 
 Vue.use(VueRouter);
 
@@ -25,20 +23,9 @@ const routes = [
     component: Maintenance,
   },
   {
-    path: '/story',
-    name: 'Story',
-    component: Blog,
-  },
-  {
-    path: '/donate',
-    name: 'Donation',
-    component: Donation,
-  },
-  {
-    path: '/story/:path',
-    name: 'StoryPage',
-    component: StoryPage,
-    props: true,
+    path: '/nota/:id',
+    name: 'Nota',
+    component: Nota,
   },
   // {
   //   path: '/about',
