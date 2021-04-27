@@ -38,7 +38,7 @@
           Indonesia
           55584</p>
         <div>
-          <a v-for="(social, index) in socials" :key="index"
+          <a class="white--text" v-for="(social, index) in socials" :key="index"
           target="_blank"
           v-bind:href="social.route">
           <v-btn
@@ -48,6 +48,8 @@
           >
             <font-awesome-icon class="fi-social" :icon="social.icon"></font-awesome-icon>
           </v-btn>
+          {{social.name}}
+          <br>
           </a>
         </div>
       </v-col>
@@ -61,7 +63,7 @@ export default {
   data() {
     return {
       menus: [
-        // { title: 'Home', route: '/home' },
+        { title: 'Home', route: '/home' },
         // { title: 'Story', route: '/mt' },
         // { title: 'Product', route: '/mt' },
         // { title: 'Donation', route: '/donate' },
@@ -69,11 +71,10 @@ export default {
         // { title: 'Privacy Policy', route: '/mt' },
       ],
       socials: [
-        { icon: ['fab', 'instagram'], route: 'https://www.instagram.com/fitin.official/?hl=id' },
-        { icon: ['fab', 'linkedin'], route: 'https://www.linkedin.com/company/fitin-indonesia/' },
-        { icon: ['fab', 'twitter'], route: 'https://twitter.com/fitin_id' },
-        { icon: ['fab', 'facebook'], route: 'https://web.facebook.com/fashion.fitin/' },
-        { icon: ['fa', 'envelope'], route: 'mailto:fitinyourfashion@gmail.com?subject=Ask%20Fitin' },
+        { icon: ['fab', 'instagram'], route: 'https://www.instagram.com/fitin.official/?hl=id', name: 'Fitin Official' },
+        { icon: ['fab', 'instagram'], route: 'https://www.instagram.com/fitin.project/', name: 'Fitin Project' },
+        { icon: ['fab', 'instagram'], route: 'https://www.instagram.com/fitin.production/', name: 'Fitin Production' },
+        { icon: ['fa', 'envelope'], route: 'mailto:fitinyourfashion@gmail.com?subject=Ask%20Fitin', name: 'Email' },
       ],
     };
   },

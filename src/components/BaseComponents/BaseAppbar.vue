@@ -59,7 +59,7 @@ export default {
   data() {
     return {
       menus: [
-        // { title: 'Home', route: '/home' },
+        { title: 'Home', route: '/home' },
         // { title: 'Story', route: '/mt' },
         // { title: 'Product', route: '/mt' },
         // { title: 'Donation', route: '/donate' },

@@ -9,6 +9,7 @@ import {
   faDonate,
   faGifts,
   faHeart,
+  faProjectDiagram,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faInstagram,
@@ -20,6 +21,7 @@ import {
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 library.add(
   faEnvelope,
+  faProjectDiagram,
   faPhoneSquareAlt,
   faInstagram,
   faBars,

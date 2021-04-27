@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Maintenance from '../views/404.vue';
 import Nota from '../views/Nota.vue';
+import Feedback from '../views/Feedback.vue';
 
 Vue.use(VueRouter);
 
@@ -26,6 +27,11 @@ const routes = [
     path: '/nota/:id',
     name: 'Nota',
     component: Nota,
+  },
+  {
+    path: '/thank-you',
+    name: 'Feedback',
+    component: Feedback,
   },
   // {
   //   path: '/about',
