@@ -7,7 +7,7 @@
           <font-awesome-icon class="fi-icon tertiary--text" :icon="['fas', 'heart']"></font-awesome-icon>
       </div>
       <div class="fi-frame-container">
-        <iframe class="fi-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSeC6Y_UHIrAbCXxYzScN5w-ZgJiP_SmJAkNG2Y7dmgfZ3e_lg/viewform?embedded=true" width=100% height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <iframe class="fi-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSeC6Y_UHIrAbCXxYzScN5w-ZgJiP_SmJAkNG2Y7dmgfZ3e_lg/viewform?embedded=true" width=100% height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
           <font-awesome-icon class="fi-icon primary--text" :icon="['fas', 'heart']"></font-awesome-icon>
           <h1 class="fi-sub-title secondary--text">Thank you for using our services and support our impact to create a more friendly and caring world</h1>
@@ -31,7 +31,12 @@ export default {
 
 <style lang="scss" scoped>
 .fi-feedback{
-    padding: 8%;
+      @media only screen and (max-width: 960px) {
+        padding: 30% 2%;
+      }
+      @media only screen and (min-width: 960px) {
+        padding: 8%;
+      }
     .fi-title {
         font-family: 'Nexa-Bold';
         font-style: normal;
@@ -65,17 +70,36 @@ export default {
         }
     }
     .fi-icon{
-        font-size: 70px;
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
         margin-top: 5%;
         margin-bottom: 5%;
+        @media only screen and (max-width: 960px) {
+        font-size: 50px;
+        }
+        @media only screen and (min-width: 960px) {
+        font-size: 70px;
+        }
     }
     .fi-frame-container{
         position: relative;
         overflow: hidden;
+    }
+    .fi-frame{
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     width: 100%;
+    //     @media only screen and (max-width: 960px) {
+    //     height: 100%;
+    //     }
+    //     @media only screen and (min-width: 960px) {
+    //     height: 1000px;
+    //     }
     }
 }
 </style>
